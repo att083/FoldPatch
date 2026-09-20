@@ -1,0 +1,15 @@
+/build/
+/artifacts/
+/.local/
+/local.properties
+*.keystore
+*.jks
+*.p12
+*.pem
+*.key
+.env
+.env.*
+!*.example
+__pycache__/
+*.pyc
+.DS_Store

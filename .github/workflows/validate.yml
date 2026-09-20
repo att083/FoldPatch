@@ -1,0 +1,46 @@
+name: Validate source
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test-and-build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Set up JDK 17
+        uses: actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6 # v6.0.1
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Install the required Android SDK packages
+        run: sdkmanager --sdk_root="$ANDROID_HOME" 'platforms;android-36' 'build-tools;35.0.0' 'platform-tools'
+      - name: Run host, release and localization checks
+        run: bash scripts/test.sh
+      - name: Build the unsigned release APK
+        run: bash scripts/build.sh release
+      - name: Validate the public export and document links
+        run: python3 scripts/prepare-public.py
+      - name: Keep build evidence
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: validation-unsigned-${{ github.sha }}
+          path: |
+            build/foldpatch-release-unsigned.apk
+            build/foldpatch-source.zip
+          if-no-files-found: error
+          retention-days: 7

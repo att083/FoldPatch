@@ -1,0 +1,33 @@
+# Current validation
+
+[한국어](RELEASE_REVIEW.md) · [Compatibility](COMPATIBILITY.en.md) · [Historical development log (Korean)](research/2026-09-20-development-history.md)
+
+Scope: **v0.1.0-alpha.4**, updated 2026-09-20. This is an early alpha being prepared for its first GitHub release. **Physical-device testing covers Samsung Galaxy Z Fold3 / Android 15 / One UI 7. Android 16 and 17 have emulator results only.**
+
+## Observed results
+
+| Area | Evidence | Limits |
+| --- | --- | --- |
+| Fold3 operation | Existing-app reflow, click/scroll/drag, one-sided keyboard, recents/notifications and cover-screen recovery after folding | Accumulated development checks, not a complete final-version rerun of every feature |
+| Latest 50% setting | Fold3 range UI saved 50% per side and restored the previous range; Fold3/API 37 automated input-path checks covered endpoints, zoom and long-press | Synthetic streams do not establish physical-finger feel or digitizer behavior |
+| Android 15/16/17 emulators | Integrated reflow, asymmetric widths, forced-process-exit and area-ownership recovery; input and keyboard editing on API 36/37 | Not Samsung hardware, physical folding or latest One UI validation |
+| Onboarding | Android 15/16 wireless Shizuku pairing, denied/retried authorization, range saving and progress after restart | Fresh Samsung installation and independent novice-user testing remain open |
+| Connection continuity | Fold3 clicks during about 120 seconds without Wi-Fi/wireless debugging; control returned after about one minute of screen-off | USB debugging remained enabled; no claim of all-day/outdoor continuity or reboot autostart |
+| Public APK candidate | Distribution-signature verification; fresh installation/launch and setup progress retained across an update on Android 17 emulator | The existing Samsung phone used a development-signed update to retain its data |
+| Browser installation | Android 17 emulator: Chrome download → allow installation source → Android installer → Open → first setup screen; verified download hash, version and non-debuggable flag | Served from a local HTTP test server, not the eventual GitHub HTTPS release or a Samsung device |
+
+An early Android 17 path failed. The integrated alternative subsequently passed the tests above while preserving system ownership. Historical statements about that failed path are not the current result. Android 17 bottom gestures/taskbar behavior and manufacturer display structures still need additional device checks.
+
+## Source and artifacts
+
+- Extracted the public source ZIP into a separate directory and passed all nine host test groups, release checks, 221 string keys across six resource sets, and the release build.
+- Rebuilt manifest, DEX, resources and license-file contents match the signed candidate. This excludes signature and ZIP metadata; it is not a claim of byte-identical APK files.
+- The release is non-debuggable and excludes development test entry points. Checks cover the absence of Internet permission, fixed dependency hashes and license files.
+- GitHub Actions is configured for the same host checks, unsigned build and public-export/document-link validation. Workflow lint and execution of the same commands from the exported source passed locally. **No hosted GitHub run has occurred yet.**
+- Signing-certificate SHA-256: `c069f52970619a240dab85e4e519ae59c82cd03ca1a5ccfb0ac6e3fb161c0e48`.
+
+## Still open
+
+Actual repository/release download URLs, a separate signing-key backup, fresh Samsung setup and an independent novice's attempt need their own confirmation. Android 16/17 hardware, long-term thermals/battery, protected content, calls and every system transition remain unverified. Landscape and concurrent screen-reader use are not supported.
+
+Detailed Korean records cover [onboarding](research/2026-09-20-first-run-validation.md), [input/recovery](research/2026-09-20-input-and-recovery.md), [fold recovery](research/2026-09-20-fold-system-ui-restore.md) and [indoor connection checks](research/2026-09-20-home-stability.md). See [next work](BACKLOG.en.md) for priorities.

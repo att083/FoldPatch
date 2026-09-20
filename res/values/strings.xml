@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" formatted="false">FoldPatch</string>
+    <string name="brand_name" formatted="false">FoldPatch</string>
+    <string name="brand_tagline" formatted="false">Bridge the split. Keep using your phone.</string>
+    <string name="assist_title" formatted="false">Use FoldPatch</string>
+    <string name="assist_toggle" formatted="false">Use FoldPatch</string>
+    <string name="assist_description" formatted="false">Connects the two sides of the screen around the damaged center.</string>
+    <string name="setup" formatted="false">Get started</string>
+    <string name="display_section" formatted="false">Display</string>
+    <string name="auto_start" formatted="false">Turn on when unfolded</string>
+    <string name="auto_start_description" formatted="false">Turns FoldPatch on again when you fold and unfold the phone.</string>
+    <string name="touch_side" formatted="false">Working touch side</string>
+    <string name="range_title" formatted="false">Adjust screen areas</string>
+    <string name="controls_section" formatted="false">Controls</string>
+    <string name="pointer_title" formatted="false">Touchpad and pointer</string>
+    <string name="toolbar_title" formatted="false">Customize toolbar</string>
+    <string name="vertical" formatted="false">Vertical</string>
+    <string name="horizontal" formatted="false">Horizontal</string>
+    <string name="help_title" formatted="false">Help and recovery</string>
+    <string name="return_to_app" formatted="false">Return to your app</string>
+    <string name="open_shizuku_browser" formatted="false">Open shizuku.rikka.app in your browser.</string>
+    <string name="setup_description" formatted="false">You can install the apps and allow permissions on the cover screen with your phone folded. Unfold it when you reach screen area adjustment.\n\nPhysical-device testing was performed on a Samsung Galaxy Z Fold3 with Android 15 and One UI 7. Android 16 and 17 were tested only on emulators, not on physical devices.</string>
+    <string name="setup_shizuku_title" formatted="false">1. Install and start Shizuku</string>
+    <string name="setup_shizuku_body" formatted="false">Shizuku enables screen layout changes and touch forwarding. Start it with wireless debugging, then authorize FoldPatch. Start Shizuku again after restarting your phone.</string>
+    <string name="setup_shizuku_guide" formatted="false">Shizuku setup guide</string>
+    <string name="setup_permissions_title" formatted="false">2. Permissions and keyboard</string>
+    <string name="setup_permissions_body" formatted="false">Permission to display over other apps is required. Turning on FoldPatch uses Shizuku to connect the FoldPatch accessibility service and switch to the FoldPatch keyboard on your working touch side. Turning it off or folding the phone restores your previous keyboard.\n\nThe accessibility service displays the adjusted screen and handles touch gestures. The keyboard sends typed characters to the current text field. Screen content and typed text are not stored or sent to a server.</string>
+    <string name="setup_range_title" formatted="false">3. Adjust the inner screen</string>
+    <string name="setup_range_body" formatted="false">Return to settings and turn on FoldPatch. Unfold the phone and use “Adjust screen areas” to set both widths. A preview reverts after 15 seconds unless you save it.</string>
+    <string name="check_shizuku" formatted="false">Check Shizuku</string>
+    <string name="accept_setup" formatted="false">Continue to setup</string>
+    <string name="allow_notifications" formatted="false">Enable settings shortcut notification</string>
+    <string name="side_description" formatted="false">Choose the side where touch works. Settings, keyboard, toolbar and touchpad move together. App content and screen areas stay the same.</string>
+    <string name="left" formatted="false">Left</string>
+    <string name="right" formatted="false">Right</string>
+    <string name="whole" formatted="false">All</string>
+    <string name="confirm_side" formatted="false">Use this side</string>
+    <string name="revert_side" formatted="false">Revert side</string>
+    <string name="side_safety" formatted="false">Without confirmation, it reverts after 15 seconds. You can also change this on the cover screen.</string>
+    <string name="mode_switch" formatted="false">Mode</string>
+    <string name="back" formatted="false">Back</string>
+    <string name="home" formatted="false">Home</string>
+    <string name="recent_apps" formatted="false">Recent apps</string>
+    <string name="in_more" formatted="false">Open from More</string>
+    <string name="back_settings" formatted="false">Back to settings</string>
+    <string name="settings" formatted="false">Settings</string>
+    <string name="pointer_speed" formatted="false">Pointer speed</string>
+    <string name="speed_description" formatted="false">How far the pointer moves for the same finger movement. Clicks and scrolling are unaffected.</string>
+    <string name="speed_reset" formatted="false">Reset to 1.0×</string>
+    <string name="speed_limits" formatted="false">0.5× slower — 3.0× faster</string>
+    <string name="toolbar_description" formatted="false">Preview the layout and buttons as you change them. Changes are saved automatically.</string>
+    <string name="toolbar_preview" formatted="false">Preview · actual button size</string>
+    <string name="always_visible" formatted="false">Buttons when expanded</string>
+    <string name="mode_buttons" formatted="false">Left / Right / All</string>
+    <string name="unpinned_help" formatted="false">Other buttons appear under More.</string>
+    <string name="drag_toolbar_help" formatted="false">Tap the handle to cycle: one button → selected buttons → all buttons → one button. Drag the handle to move the toolbar.</string>
+    <string name="toolbar_size" formatted="false">Toolbar size</string>
+    <string name="toolbar_size_description" formatted="false">100% is the default. Buttons and text scale together.</string>
+    <string name="toolbar_size_reset" formatted="false">Reset to 100%</string>
+    <string name="toolbar_smaller" formatted="false">Decrease toolbar size by 5%</string>
+    <string name="toolbar_larger" formatted="false">Increase toolbar size by 5%</string>
+    <string name="toolbar_size_limits" formatted="false">60% — 160% · steps of 5%</string>
+    <string name="range_gate_description" formatted="false">Use the sliders on the ruler screen to set the visible area on each side.</string>
+    <string name="range_gate_body" formatted="false">Unfold the phone in portrait orientation and turn on FoldPatch first.</string>
+    <string name="start_assistance" formatted="false">Turn on FoldPatch</string>
+    <string name="help_description" formatted="false">Use these options if the display looks wrong or the connection is lost.</string>
+    <string name="setup_permissions" formatted="false">Setup and permissions</string>
+    <string name="saved_range" formatted="false">Saved screen areas</string>
+    <string name="restore_range" formatted="false">Restore previous areas</string>
+    <string name="range_restored" formatted="false">Previous screen areas restored.</string>
+    <string name="shizuku_connection" formatted="false">Shizuku connection</string>
+    <string name="shizuku_connected" formatted="false">Shizuku is connected.</string>
+    <string name="shizuku_restart_help" formatted="false">If Shizuku has stopped, open Shizuku and tap Start. Start it again after restarting your phone too. Your saved screen areas stay available.</string>
+    <string name="turn_off_title" formatted="false">When FoldPatch is off</string>
+    <string name="turn_off_body" formatted="false">Turning off “Use FoldPatch” on the main settings screen stops the screen layout adjustment, touchpad and toolbar. Your apps, such as Chrome or YouTube, keep running.\n\nIf “Turn on when unfolded” is on, FoldPatch turns on again when you fold and unfold the phone.</string>
+    <string name="notification_channel" formatted="false">FoldPatch status</string>
+    <string name="notification_initial" formatted="false">Tap to open FoldPatch settings</string>
+    <string name="pause" formatted="false">Pause</string>
+    <string name="error_overlay" formatted="false">Allow display over other apps</string>
+    <string name="error_shizuku" formatted="false">Shizuku connection required</string>
+    <string name="error_android" formatted="false">Requires Android 14 or later</string>
+    <string name="preparing_controls" formatted="false">Preparing touch controls</string>
+    <string name="error_accessibility" formatted="false">Check the accessibility connection in settings</string>
+    <string name="error_screen" formatted="false">Set up the screen connection again</string>
+    <string name="error_keyboard" formatted="false">Check the FoldPatch keyboard connection</string>
+    <string name="error_connection" formatted="false">Check the connection</string>
+    <string name="state_off" formatted="false">Off</string>
+    <string name="state_adjusting" formatted="false">Adjusting areas · original display</string>
+    <string name="state_folded" formatted="false">Waiting for the inner screen</string>
+    <string name="state_portrait" formatted="false">Use in portrait orientation</string>
+    <string name="state_connect" formatted="false">Connection needed</string>
+    <string name="state_active" formatted="false">Active</string>
+    <string name="state_starting" formatted="false">Starting</string>
+    <string name="notification_settings" formatted="false">Tap to open settings</string>
+    <string name="resume" formatted="false">Resume</string>
+    <string name="whole_requires_android" formatted="false">Whole-screen control requires Android 14 or later.</string>
+    <string name="range_preview_title" formatted="false">Preview screen areas</string>
+    <string name="range_preview_description" formatted="false">Check the lines and numbers on both sides.</string>
+    <string name="range_adjust_description" formatted="false">Move the bright lines to the edges of the visible areas.</string>
+    <string name="range_usable" formatted="false">Usable areas</string>
+    <string name="range_save_help" formatted="false">Save if all numbers are visible and the circles look round.</string>
+    <string name="range_readjust_help" formatted="false">To change the areas, tap “Adjust again”.</string>
+    <string name="left_width" formatted="false">Width from the left edge</string>
+    <string name="right_width" formatted="false">Width from the right edge</string>
+    <string name="range_sliders_help" formatted="false">Slide to adjust; use − / + for small steps</string>
+    <string name="save_range" formatted="false">Save these areas</string>
+    <string name="preview" formatted="false">Preview</string>
+    <string name="readjust" formatted="false">Adjust again</string>
+    <string name="cancel" formatted="false">Cancel</string>
+    <string name="range_saved" formatted="false">Screen areas saved.</string>
+    <string name="range_preview_cancelled" formatted="false">Preview cancelled. Your previous areas are restored.</string>
+    <string name="range_applying" formatted="false">Applying to the screen…</string>
+    <string name="range_preparing" formatted="false">Preparing the ruler…</string>
+    <string name="ruler_legend" formatted="false">0% at each edge · major marks 5% · minor marks 1%</string>
+    <string name="check_left" formatted="false">Check left</string>
+    <string name="check_right" formatted="false">Check right</string>
+    <string name="left_zero" formatted="false">Left edge is 0%</string>
+    <string name="right_zero" formatted="false">Right edge is 0%</string>
+    <string name="use_to_line" formatted="false">Use up to the line</string>
+    <string name="collapse_drag" formatted="false">Collapse to one button · drag to move</string>
+    <string name="more_drag" formatted="false">Show all buttons · drag to move</string>
+    <string name="selected" formatted="false">Selected</string>
+    <string name="not_selected" formatted="false">Not selected</string>
+    <string name="pointer_practice_description" formatted="false">Move your finger in the box below to move the pointer. Tap to increase the click count.</string>
+    <string name="keyboard_name" formatted="false">FoldPatch Keyboard</string>
+    <string name="accessibility_label" formatted="false">FoldPatch screen controls</string>
+    <string name="tile_label" formatted="false">Open FoldPatch</string>
+    <string name="pointer_accessibility_description" formatted="false">Displays the adjusted screen and routes physical touch to the original screen coordinates. The working side can act as a touchpad; toolbar and keyboard remain directly usable. It does not read screen content or typed text.</string>
+    <string name="keyboard_languages" formatted="false">Typing supports Korean and English only. Changing the app language does not add input languages.</string>
+    <string name="key_korean" formatted="false">한 / EN</string>
+    <string name="key_english" formatted="false">EN / 한</string>
+    <string name="key_hide" formatted="false">Hide ▾</string>
+    <string name="key_other" formatted="false">Switch IME</string>
+    <string name="key_space" formatted="false">Space</string>
+    <string name="key_search" formatted="false">Search</string>
+    <string name="key_send" formatted="false">Send</string>
+    <string name="key_next" formatted="false">Next</string>
+    <string name="key_go" formatted="false">Go</string>
+    <string name="key_enter" formatted="false">Enter</string>
+    <string name="side_summary">%1$s · settings, keyboard and touchpad</string>
+    <string name="side_modes_description">Left, Right and All refer to the screen area you control. %1$s uses normal touch. %2$s and All use the touchpad.</string>
+    <string name="side_countdown">Reverts in %1$d s unless confirmed.</string>
+    <string name="direct_summary">%1$s · normal touch</string>
+    <string name="pad_summary">%1$s · touchpad · %2$s</string>
+    <string name="speed_value">%1$.1f×</string>
+    <string name="regions_summary">Left %1$s · Right %2$s</string>
+    <string name="previous_regions">Previous · Left %1$s · Right %2$s</string>
+    <string name="pointer_description">To control %1$s or All, use the %2$s side as a touchpad. Move one finger to move the pointer; tap to click. Scroll in any direction with two fingers.</string>
+    <string name="reader_mode_help">While a screen reader is active, use %1$s control instead.</string>
+    <string name="width_decrease">Decrease %1$s by 0.5%%</string>
+    <string name="width_increase">Increase %1$s by 0.5%%</string>
+    <string name="range_countdown">Your previous areas return in %1$d seconds unless you save.</string>
+    <string name="left_percent">Left %1$s</string>
+    <string name="right_percent">Right %1$s</string>
+    <string name="control_area">Control %1$s</string>
+    <string name="practice_taps">Try moving here · taps %1$d</string>
+    <string name="connection_retrying" formatted="false">Reconnecting…</string>
+    <string name="connection_stopped" formatted="false">Start Shizuku to reconnect</string>
+    <string name="connection_permission" formatted="false">Allow FoldPatch in Shizuku.</string>
+    <string name="gesture_help" formatted="false">Move one finger to move the pointer; tap to click and double-tap to double-click. Hold still, then move to drag or keep holding for a long press. You can also tap, then press again and drag. Move two fingers together to scroll in any direction; spread or pinch them to zoom at the pointer. Apps decide which gestures they support.</string>
+    <string name="error_reader" formatted="false">Screen reader active — FoldPatch is unavailable</string>
+    <string name="unfold_drag" formatted="false">Show selected buttons · drag to move</string>
+    <string name="key_edit" formatted="false">Edit</string>
+    <string name="key_cut" formatted="false">Cut</string>
+    <string name="key_copy" formatted="false">Copy</string>
+    <string name="key_paste" formatted="false">Paste</string>
+    <string name="key_select_all" formatted="false">Select all</string>
+    <string name="key_cursor_left" formatted="false">Move cursor left</string>
+    <string name="key_cursor_right" formatted="false">Move cursor right</string>
+    <string name="key_edit_unavailable" formatted="false">This text field does not support that action.</string>
+    <string name="connection_install" formatted="false">Install and start Shizuku first.</string>
+    <string name="connection_check_failed" formatted="false">The connection is taking longer than expected. Check Shizuku, then try again.</string>
+    <string name="connection_verified" formatted="false">FoldPatch is connected to Shizuku.</string>
+
+    <string name="wizard_progress">Setup · %1$d of 5</string>
+    <string name="wizard_side_title" formatted="false">Which side responds to touch when unfolded?</string>
+    <string name="wizard_side_body" formatted="false">Choose the side of the inner screen that responds to touch. The controls and keyboard will appear on that side.\n\nYou can prepare on the cover screen with your phone folded. Unfold it when adjusting the screen areas.</string>
+    <string name="wizard_use_left" formatted="false">Use the left side</string>
+    <string name="wizard_use_right" formatted="false">Use the right side</string>
+    <string name="wizard_intro_title" formatted="false">Shall we patch the usable screen areas together?</string>
+    <string name="wizard_intro_body" formatted="false">FoldPatch leaves the broken center empty and shows your apps across both usable sides. This needs a separate app called Shizuku. We will guide you through installation and permissions.\n\nRead each permission explanation before allowing it. Start Shizuku again after restarting your phone.</string>
+    <string name="wizard_continue" formatted="false">Start setup</string>
+    <string name="wizard_install_title" formatted="false">Install Shizuku</string>
+    <string name="wizard_install_body" formatted="false">Use the button below to open the official Shizuku download page and install it. Return to FoldPatch after installation to continue.\n\nShizuku and FoldPatch are made by different developers.</string>
+    <string name="wizard_install" formatted="false">Open official download</string>
+    <string name="wizard_start_title" formatted="false">Start Shizuku</string>
+    <string name="wizard_developer_body" formatted="false">Use the button below to open About phone.\n\nOn a Galaxy, open Software information and tap Build number seven times. Unlock your phone if prompted.\n\nReturn to FoldPatch and tap Done · Next. If Developer options are already on, you can continue now. Menu names may vary by device.</string>
+    <string name="wizard_open_about" formatted="false">Open About phone</string>
+    <string name="wizard_next" formatted="false">Done · Next</string>
+    <string name="wizard_wireless_body" formatted="false">Connect to a trusted Wi-Fi network, such as your home network.\n\nTap Open Developer options and turn on Wireless debugging. If asked, allow debugging on this Wi-Fi network.\n\nReturn to FoldPatch and tap Done · Next. We do not recommend doing this on public Wi-Fi.</string>
+    <string name="wizard_open_developer" formatted="false">Open Developer options</string>
+    <string name="wizard_pair_body" formatted="false">1. Open Shizuku and tap Pairing under Start via Wireless debugging. Allow notifications if prompted.\n\n2. Follow Shizuku’s instructions to open Pair device with pairing code in Wireless debugging settings. Enter the displayed code in the Shizuku notification.\n\n3. Return to Shizuku and tap Start. When it says it is running, return to FoldPatch.\n\nIf already paired, just tap Start. If the pairing notification disappears, open Pairing in Shizuku again. Enter the code only in Shizuku; FoldPatch does not receive or store it.</string>
+    <string name="wizard_open_shizuku" formatted="false">Open Shizuku</string>
+    <string name="wizard_authorize_title" formatted="false">Allow FoldPatch in Shizuku</string>
+    <string name="wizard_authorize_body" formatted="false">Tap Allow connection below to open the Shizuku permission dialog. Allow FoldPatch to rearrange the screen and send touch input. You can revoke this permission in Shizuku at any time.\n\nIf the dialog does not appear after a previous denial, open Shizuku and enable FoldPatch in Authorized applications.</string>
+    <string name="wizard_authorize" formatted="false">Allow connection</string>
+    <string name="wizard_connect_title" formatted="false">Connecting to Shizuku</string>
+    <string name="wizard_connect_body" formatted="false">Permission is allowed. Please wait while FoldPatch connects to Shizuku.\n\nIf this screen stays open, check that Shizuku is running. Then return and tap Check Shizuku.</string>
+    <string name="wizard_overlay_title" formatted="false">Keep controls visible over other apps</string>
+    <string name="wizard_overlay_body" formatted="false">The Display over other apps permission lets you use the controls while another app is open.\n\nUse the button below to open settings, turn on permission for FoldPatch, then return here.</string>
+    <string name="wizard_open_permission" formatted="false">Open permission settings</string>
+    <string name="wizard_access_title" formatted="false">Permission for screen controls</string>
+    <string name="wizard_access_body" formatted="false">When you start FoldPatch, FoldPatch uses Shizuku to enable its accessibility service. It displays the adjusted screen and handles touch gestures.\n\nIt does not retrieve other apps’ text or accessibility content. Screen images are processed on your phone and are not saved or sent to a server.\n\nStop FoldPatch before turning the service off in system Accessibility settings. Stopping FoldPatch restores the display, but does not remove this permission.</string>
+    <string name="wizard_agree" formatted="false">I agree · Continue</string>
+    <string name="wizard_keyboard_title" formatted="false">Type on the working side</string>
+    <string name="wizard_keyboard_body" formatted="false">While FoldPatch is active, Shizuku enables and selects the FoldPatch keyboard on your working side. Typed text goes to the selected input field in any app; FoldPatch does not save it or send it to a server.\n\nFolding the phone or stopping FoldPatch restores your previous keyboard. You can change keyboards in system settings.</string>
+    <string name="wizard_range_body" formatted="false">Now unfold your phone in portrait orientation and unlock it.\n\n1. Tap Turn on FoldPatch. When the button changes to Adjust screen areas, tap it again.\n\n2. On the ruler screen, use the sliders and − / + buttons to set the visible width on each side.\n\n3. Tap Preview, check the result, then tap Save these areas. Without saving, the previous areas return after 15 seconds.</string>
+    <string name="wizard_unfold" formatted="false">This step needs the inner screen. Unfold your phone in portrait orientation and unlock it.</string>
+    <string name="wizard_practice_title" formatted="false">Try the controls</string>
+    <string name="wizard_bar_body">The controls below are for practice. Tap the handle to cycle through one button → selected buttons → all buttons.\n\nIn everyday use, select the opposite side or %1$s to use the working side as a touchpad.</string>
+    <string name="wizard_practice_done" formatted="false">Finish practice</string>
+    <string name="wizard_ready_title" formatted="false">You’re ready</string>
+    <string name="wizard_ready_body" formatted="false">You can now use FoldPatch with your usual apps.\n\nIf Shizuku stops, we will show you how to start it again. You do not need to adjust your saved screen areas again.</string>
+    <string name="wizard_notification_body" formatted="false">Turn on notifications to open FoldPatch settings by tapping its notification. FoldPatch also works without notifications.</string>
+    <string name="wizard_finish" formatted="false">Use FoldPatch</string>
+    <string name="wizard_later" formatted="false">Set up later</string>
+    <string name="wizard_resume" formatted="false">Continue from the setup step where you left off.</string>
+    <string name="wizard_developer_required" formatted="false">Developer options are not enabled yet. Open About phone, tap Build number 7 times, then return here.</string>
+    <string name="wizard_developer_title" formatted="false">Turn on Developer options</string>
+    <string name="wizard_wireless_title" formatted="false">Turn on Wireless debugging</string>
+    <string name="wizard_pair_title" formatted="false">Pair and start Shizuku</string>
+    <string name="wizard_restart_title" formatted="false">Start Shizuku again</string>
+    <string name="wizard_restart_body" formatted="false">Shizuku has stopped. Use the button below to open Shizuku and tap Start. When it says it is running, return to FoldPatch.\n\nYou may need to connect to trusted Wi-Fi and turn on Wireless debugging to start it. If Shizuku requests pairing, follow its instructions.\n\nYour screen areas and FoldPatch settings are still saved.</string>
+</resources>

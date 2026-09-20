@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" formatted="false">FoldPatch</string>
+    <string name="brand_name" formatted="false">FoldPatch</string>
+    <string name="brand_tagline" formatted="false">連接破損的螢幕，讓使用繼續。</string>
+    <string name="assist_title" formatted="false">使用 FoldPatch</string>
+    <string name="assist_toggle" formatted="false">使用 FoldPatch</string>
+    <string name="assist_description" formatted="false">避開損壞的中央區域，連接顯示左右兩側的內容。</string>
+    <string name="setup" formatted="false">開始使用</string>
+    <string name="display_section" formatted="false">螢幕</string>
+    <string name="auto_start" formatted="false">展開時自動開啟</string>
+    <string name="auto_start_description" formatted="false">摺疊後再次展開手機時，FoldPatch 會重新開啟。</string>
+    <string name="touch_side" formatted="false">觸控正常的一側</string>
+    <string name="range_title" formatted="false">調整螢幕範圍</string>
+    <string name="controls_section" formatted="false">操作</string>
+    <string name="pointer_title" formatted="false">觸控板與游標</string>
+    <string name="toolbar_title" formatted="false">自訂工具列</string>
+    <string name="vertical" formatted="false">直向</string>
+    <string name="horizontal" formatted="false">橫向</string>
+    <string name="help_title" formatted="false">說明與還原</string>
+    <string name="return_to_app" formatted="false">返回原本的應用程式</string>
+    <string name="open_shizuku_browser" formatted="false">請在瀏覽器中開啟 shizuku.rikka.app。</string>
+    <string name="setup_description" formatted="false">安裝應用程式和設定權限時，可以摺起手機使用外螢幕。調整螢幕範圍時再展開手機。\n\n已在三星 Galaxy Z Fold3 · Android 15 · One UI 7 實機上確認運作。Android 16 和 17 僅在模擬器上測試，尚未進行實機測試。</string>
+    <string name="setup_shizuku_title" formatted="false">1. 安裝並啟動 Shizuku</string>
+    <string name="setup_shizuku_body" formatted="false">Shizuku 用於調整螢幕配置和轉送觸控。請透過無線偵錯啟動它，再授權 FoldPatch。手機重新啟動後需要再次啟動 Shizuku。</string>
+    <string name="setup_shizuku_guide" formatted="false">Shizuku 設定指南</string>
+    <string name="setup_permissions_title" formatted="false">2. 權限與鍵盤</string>
+    <string name="setup_permissions_body" formatted="false">需要允許顯示在其他應用程式上層。開啟 FoldPatch 後，會透過 Shizuku 連接 FoldPatch 無障礙服務，並切換為觸控正常一側的 FoldPatch 鍵盤。關閉 FoldPatch 或摺疊手機後，會還原原本的鍵盤。\n\n無障礙服務用於顯示調整後的畫面及處理觸控手勢。鍵盤將輸入的字元傳送到目前的輸入欄位。螢幕內容和輸入的文字不會被儲存或傳送到伺服器。</string>
+    <string name="setup_range_title" formatted="false">3. 調整內螢幕範圍</string>
+    <string name="setup_range_body" formatted="false">返回設定並開啟 FoldPatch。展開手機，透過「調整螢幕範圍」設定兩側寬度。預覽若未儲存，會在 15 秒後還原原本的範圍。</string>
+    <string name="check_shizuku" formatted="false">檢查 Shizuku 連線</string>
+    <string name="accept_setup" formatted="false">已了解，繼續設定</string>
+    <string name="allow_notifications" formatted="false">開啟設定捷徑通知</string>
+    <string name="side_description" formatted="false">選擇觸控正常的一側。設定、鍵盤、工具列和觸控板會一起移動。應用程式內容和左右螢幕範圍維持不變。</string>
+    <string name="left" formatted="false">左側</string>
+    <string name="right" formatted="false">右側</string>
+    <string name="whole" formatted="false">全部</string>
+    <string name="confirm_side" formatted="false">使用這一側</string>
+    <string name="revert_side" formatted="false">還原原本的一側</string>
+    <string name="side_safety" formatted="false">若未確認，會在 15 秒後還原。也可以在外螢幕變更。</string>
+    <string name="mode_switch" formatted="false">切換</string>
+    <string name="back" formatted="false">返回</string>
+    <string name="home" formatted="false">主畫面</string>
+    <string name="recent_apps" formatted="false">最近使用的應用程式</string>
+    <string name="in_more" formatted="false">從更多中開啟</string>
+    <string name="back_settings" formatted="false">返回設定</string>
+    <string name="settings" formatted="false">設定</string>
+    <string name="pointer_speed" formatted="false">游標速度</string>
+    <string name="speed_description" formatted="false">控制相同手指移動距離下游標的移動距離。不影響點擊和捲動速度。</string>
+    <string name="speed_reset" formatted="false">重設為 1.0 倍</string>
+    <string name="speed_limits" formatted="false">0.5 倍慢速 — 3.0 倍快速</string>
+    <string name="toolbar_description" formatted="false">配置和按鈕的調整會立即顯示在預覽中，並自動儲存。</string>
+    <string name="toolbar_preview" formatted="false">預覽 · 實際按鈕大小</string>
+    <string name="always_visible" formatted="false">展開時顯示的按鈕</string>
+    <string name="mode_buttons" formatted="false">左側 / 右側 / 全部</string>
+    <string name="unpinned_help" formatted="false">未選取的按鈕會顯示在「更多」中。</string>
+    <string name="drag_toolbar_help" formatted="false">點按把手可依序切換：單一按鈕 → 所選按鈕 → 全部按鈕 → 單一按鈕。拖曳把手可移動工具列。</string>
+    <string name="toolbar_size" formatted="false">工具列大小</string>
+    <string name="toolbar_size_description" formatted="false">100% 為預設大小。按鈕和文字會一起縮放。</string>
+    <string name="toolbar_size_reset" formatted="false">重設為 100%</string>
+    <string name="toolbar_smaller" formatted="false">工具列縮小 5%</string>
+    <string name="toolbar_larger" formatted="false">工具列放大 5%</string>
+    <string name="toolbar_size_limits" formatted="false">60% — 160% · 每次 5%</string>
+    <string name="range_gate_description" formatted="false">在專用刻度畫面中，用滑桿調整兩側的可見範圍。</string>
+    <string name="range_gate_body" formatted="false">請先直向展開手機，並開啟 FoldPatch。</string>
+    <string name="start_assistance" formatted="false">開啟 FoldPatch</string>
+    <string name="help_description" formatted="false">顯示異常或連線中斷時，可使用以下選項。</string>
+    <string name="setup_permissions" formatted="false">設定與權限說明</string>
+    <string name="saved_range" formatted="false">已儲存的範圍</string>
+    <string name="restore_range" formatted="false">還原上次儲存的範圍</string>
+    <string name="range_restored" formatted="false">已還原原本的範圍。</string>
+    <string name="shizuku_connection" formatted="false">Shizuku 連線</string>
+    <string name="shizuku_connected" formatted="false">已連接 Shizuku。</string>
+    <string name="shizuku_restart_help" formatted="false">如果 Shizuku 停止執行，請開啟 Shizuku 並點選「啟動」。手機重新啟動後也需要重新啟動它。已儲存的螢幕範圍可以繼續使用。</string>
+    <string name="turn_off_title" formatted="false">關閉 FoldPatch 後</string>
+    <string name="turn_off_body" formatted="false">關閉設定首頁的「使用 FoldPatch」後，避開中央區域的螢幕配置、觸控板和工具列會停止。Chrome、YouTube 等使用中的應用程式不會關閉。\n\n如果開啟了「展開時自動開啟」，摺疊後再次展開手機時 FoldPatch 會重新開啟。</string>
+    <string name="notification_channel" formatted="false">FoldPatch 執行狀態</string>
+    <string name="notification_initial" formatted="false">點選開啟 FoldPatch 設定</string>
+    <string name="pause" formatted="false">暫停</string>
+    <string name="error_overlay" formatted="false">需要允許顯示在其他應用程式上層</string>
+    <string name="error_shizuku" formatted="false">需要連接 Shizuku</string>
+    <string name="error_android" formatted="false">需要 Android 14 或更新版本</string>
+    <string name="preparing_controls" formatted="false">正在準備觸控連線</string>
+    <string name="error_accessibility" formatted="false">請在設定中檢查無障礙連線</string>
+    <string name="error_screen" formatted="false">請重新設定螢幕連線</string>
+    <string name="error_keyboard" formatted="false">請檢查 FoldPatch 鍵盤連線</string>
+    <string name="error_connection" formatted="false">請檢查連線</string>
+    <string name="state_off" formatted="false">已關閉</string>
+    <string name="state_adjusting" formatted="false">正在調整範圍 · 原始顯示</string>
+    <string name="state_folded" formatted="false">等待展開內螢幕</string>
+    <string name="state_portrait" formatted="false">請直向使用</string>
+    <string name="state_connect" formatted="false">需要連線</string>
+    <string name="state_active" formatted="false">使用中</string>
+    <string name="state_starting" formatted="false">正在啟動</string>
+    <string name="notification_settings" formatted="false">點選開啟設定</string>
+    <string name="resume" formatted="false">繼續</string>
+    <string name="whole_requires_android" formatted="false">控制整個螢幕需要 Android 14 或更新版本。</string>
+    <string name="range_preview_title" formatted="false">預覽螢幕範圍</string>
+    <string name="range_preview_description" formatted="false">請檢查兩側的邊界線和數字。</string>
+    <string name="range_adjust_description" formatted="false">將亮線移到螢幕可見範圍的邊緣。</string>
+    <string name="range_usable" formatted="false">可用範圍</string>
+    <string name="range_save_help" formatted="false">如果兩側數字都能看見，且圓形沒有變形，即可儲存。</string>
+    <string name="range_readjust_help" formatted="false">如需修改範圍，請點選「重新調整」。</string>
+    <string name="left_width" formatted="false">從左邊緣起的可用寬度</string>
+    <string name="right_width" formatted="false">從右邊緣起的可用寬度</string>
+    <string name="range_sliders_help" formatted="false">用滑桿調整，用 − / + 微調</string>
+    <string name="save_range" formatted="false">儲存此範圍</string>
+    <string name="preview" formatted="false">預覽</string>
+    <string name="readjust" formatted="false">重新調整</string>
+    <string name="cancel" formatted="false">取消</string>
+    <string name="range_saved" formatted="false">螢幕範圍已儲存。</string>
+    <string name="range_preview_cancelled" formatted="false">已取消預覽並恢復之前的範圍。</string>
+    <string name="range_applying" formatted="false">正在套用至螢幕…</string>
+    <string name="range_preparing" formatted="false">正在準備刻度…</string>
+    <string name="ruler_legend" formatted="false">兩端為 0% · 大刻度 5% · 小刻度 1%</string>
+    <string name="check_left" formatted="false">檢查左側</string>
+    <string name="check_right" formatted="false">檢查右側</string>
+    <string name="left_zero" formatted="false">左邊緣為 0%</string>
+    <string name="right_zero" formatted="false">右邊緣為 0%</string>
+    <string name="use_to_line" formatted="false">使用至亮線位置</string>
+    <string name="collapse_drag" formatted="false">收合為單一按鈕 · 拖曳以移動</string>
+    <string name="more_drag" formatted="false">顯示全部按鈕 · 拖曳以移動</string>
+    <string name="selected" formatted="false">已選取</string>
+    <string name="not_selected" formatted="false">未選取</string>
+    <string name="pointer_practice_description" formatted="false">在下方區域移動手指，試著移動指標。輕點後，點擊次數會增加。</string>
+    <string name="keyboard_name" formatted="false">FoldPatch 鍵盤</string>
+    <string name="accessibility_label" formatted="false">FoldPatch 螢幕操作</string>
+    <string name="tile_label" formatted="false">開啟 FoldPatch</string>
+    <string name="pointer_accessibility_description" formatted="false">顯示調整後的畫面並將觸控轉換為原始螢幕座標。可觸控的一側可作為觸控板，工具列和鍵盤可直接操作。不讀取螢幕內容或輸入的文字。</string>
+    <string name="keyboard_languages" formatted="false">僅支援韓語和英語輸入。變更應用程式顯示語言不會增加輸入語言。</string>
+    <string name="key_korean" formatted="false">한 / EN</string>
+    <string name="key_english" formatted="false">EN / 한</string>
+    <string name="key_hide" formatted="false">收起 ▾</string>
+    <string name="key_other" formatted="false">切換鍵盤</string>
+    <string name="key_space" formatted="false">空白</string>
+    <string name="key_search" formatted="false">搜尋</string>
+    <string name="key_send" formatted="false">傳送</string>
+    <string name="key_next" formatted="false">下一項</string>
+    <string name="key_go" formatted="false">前往</string>
+    <string name="key_enter" formatted="false">輸入</string>
+    <string name="side_summary">%1$s · 設定、鍵盤與觸控板</string>
+    <string name="side_modes_description">工具列的左側、右側和全部指的是要操作的螢幕範圍。%1$s使用一般觸控，%2$s和全部使用觸控板。</string>
+    <string name="side_countdown">若未確認，將在 %1$d 秒後還原。</string>
+    <string name="direct_summary">%1$s · 一般觸控</string>
+    <string name="pad_summary">%1$s · 觸控板 · %2$s</string>
+    <string name="speed_value">%1$.1f 倍</string>
+    <string name="regions_summary">左側 %1$s · 右側 %2$s</string>
+    <string name="previous_regions">上次範圍 · 左側 %1$s · 右側 %2$s</string>
+    <string name="pointer_description">控制%1$s或全部時，%2$s螢幕會變成觸控板。單指移動游標，輕點即可點擊。雙指可上下左右捲動。</string>
+    <string name="reader_mode_help">使用螢幕閱讀器時，請使用%1$s操作模式。</string>
+    <string name="width_decrease">%1$s減少 0.5%%</string>
+    <string name="width_increase">%1$s增加 0.5%%</string>
+    <string name="range_countdown">如果不儲存，%1$d 秒後會恢復之前的範圍。</string>
+    <string name="left_percent">左側 %1$s</string>
+    <string name="right_percent">右側 %1$s</string>
+    <string name="control_area">操作%1$s</string>
+    <string name="practice_taps">在此移動 · 點擊 %1$d 次</string>
+    <string name="connection_retrying" formatted="false">正在重新連線…</string>
+    <string name="connection_stopped" formatted="false">請啟動 Shizuku</string>
+    <string name="connection_permission" formatted="false">請在 Shizuku 中允許 FoldPatch 使用。</string>
+    <string name="gesture_help" formatted="false">單指移動指標，輕點進行點擊，輕點兩次進行雙擊。按住片刻後移動可拖曳，繼續按住可長按。也可輕點一次，再次按住並拖曳。雙指一起移動可向任意方向捲動，張開或捏合可在指標位置縮放。具體效果取決於應用程式支援的手勢。</string>
+    <string name="error_reader" formatted="false">使用螢幕閱讀器時無法使用 FoldPatch</string>
+    <string name="unfold_drag" formatted="false">顯示所選按鈕 · 拖曳以移動</string>
+    <string name="key_edit" formatted="false">編輯</string>
+    <string name="key_cut" formatted="false">剪下</string>
+    <string name="key_copy" formatted="false">複製</string>
+    <string name="key_paste" formatted="false">貼上</string>
+    <string name="key_select_all" formatted="false">全選</string>
+    <string name="key_cursor_left" formatted="false">游標左移</string>
+    <string name="key_cursor_right" formatted="false">游標右移</string>
+    <string name="key_edit_unavailable" formatted="false">此輸入欄位不支援此操作。</string>
+    <string name="connection_install" formatted="false">請先安裝並啟動 Shizuku。</string>
+    <string name="connection_check_failed" formatted="false">連接耗時較長。請確認 Shizuku 正在執行後重試。</string>
+    <string name="connection_verified" formatted="false">已正常連接到 Shizuku。</string>
+
+    <string name="wizard_progress">使用準備 · %1$d / 5</string>
+    <string name="wizard_side_title" formatted="false">展開後的螢幕哪一側可以觸控？</string>
+    <string name="wizard_side_body" formatted="false">請選擇內螢幕中可以觸控的一側。操作列和鍵盤會顯示在這一側。\n\n可以摺起手機，在外螢幕上完成準備。調整螢幕範圍時再展開。</string>
+    <string name="wizard_use_left" formatted="false">使用左側</string>
+    <string name="wizard_use_right" formatted="false">使用右側</string>
+    <string name="wizard_intro_title" formatted="false">把還能用的螢幕拼接起來吧</string>
+    <string name="wizard_intro_body" formatted="false">FoldPatch 會避開中間損壞的區域，將應用程式畫面連續顯示在兩側可用區域。此功能需要另一個應用程式 Shizuku。我們會逐步引導你完成安裝和權限設定。\n\n要求權限時，請閱讀說明後再允許。手機重新啟動後，請重新啟動 Shizuku。</string>
+    <string name="wizard_continue" formatted="false">開始準備</string>
+    <string name="wizard_install_title" formatted="false">安裝 Shizuku</string>
+    <string name="wizard_install_body" formatted="false">點選下方按鈕，開啟 Shizuku 官方下載頁面並安裝。安裝完成後返回 FoldPatch，即可繼續下一步。\n\nShizuku 和 FoldPatch 由不同的開發者製作。</string>
+    <string name="wizard_install" formatted="false">開啟官方下載頁面</string>
+    <string name="wizard_start_title" formatted="false">啟動 Shizuku</string>
+    <string name="wizard_developer_body" formatted="false">點選下方按鈕開啟手機資訊。\n\n在 Galaxy 上，進入「軟體資訊」，連續點選「版本號碼」7次。如果要求解鎖，請先解鎖。\n\n返回 FoldPatch，點選「已完成 · 下一步」。如果已開啟開發人員選項，可以直接繼續。不同裝置的選單名稱可能不同。</string>
+    <string name="wizard_open_about" formatted="false">開啟關於手機</string>
+    <string name="wizard_next" formatted="false">已完成 · 下一步</string>
+    <string name="wizard_wireless_body" formatted="false">連接家庭網路等可信任的 Wi-Fi。\n\n點選「開啟開發人員選項」，開啟「無線偵錯」。如果詢問是否允許在此 Wi-Fi 網路上偵錯，請選擇允許。\n\n返回 FoldPatch，點選「已完成 · 下一步」。不建議在公共 Wi-Fi 上進行此操作。</string>
+    <string name="wizard_open_developer" formatted="false">開啟開發人員選項</string>
+    <string name="wizard_pair_body" formatted="false">1. 開啟 Shizuku，點選「透過無線偵錯啟動」中的「配對」。如果要求通知權限，請允許。\n\n2. 依照 Shizuku 的提示，在無線偵錯設定中開啟使用配對碼配對裝置的選項。將顯示的配對碼輸入至 Shizuku 通知中。\n\n3. 返回 Shizuku，點選「啟動」。顯示正在執行後，返回 FoldPatch。\n\n如果已經配對，只需點選「啟動」。如果配對通知消失，請在 Shizuku 中重新開啟「配對」。配對碼只輸入至 Shizuku；FoldPatch 不會接收或儲存。</string>
+    <string name="wizard_open_shizuku" formatted="false">開啟 Shizuku</string>
+    <string name="wizard_authorize_title" formatted="false">請在 Shizuku 中允許 FoldPatch</string>
+    <string name="wizard_authorize_body" formatted="false">點選下方「允許連接」，會顯示 Shizuku 權限視窗。請允許 FoldPatch 調整螢幕配置和傳遞觸控操作。你可以隨時在 Shizuku 中撤銷權限。\n\n如果之前拒絕後不再顯示權限視窗，請開啟 Shizuku，在「已授權應用程式」中啟用 FoldPatch。</string>
+    <string name="wizard_authorize" formatted="false">允許連接</string>
+    <string name="wizard_connect_title" formatted="false">正在連接 Shizuku</string>
+    <string name="wizard_connect_body" formatted="false">權限已允許。請稍候，FoldPatch 正在連接 Shizuku。\n\n如果一直停留在此頁面，請開啟 Shizuku，確認它正在執行。然後返回並點選「檢查 Shizuku 連線」。</string>
+    <string name="wizard_overlay_title" formatted="false">讓操作列顯示在其他應用程式上方</string>
+    <string name="wizard_overlay_body" formatted="false">要在使用其他應用程式時點選操作列，需要允許「顯示在其他應用程式上層」權限。\n\n點選下方按鈕開啟設定，開啟 FoldPatch 的權限後返回。</string>
+    <string name="wizard_open_permission" formatted="false">開啟權限設定</string>
+    <string name="wizard_access_title" formatted="false">用於螢幕操作的無障礙功能</string>
+    <string name="wizard_access_body" formatted="false">啟動 FoldPatch 時，FoldPatch 會透過 Shizuku 啟用其無障礙服務，用於顯示調整後的畫面和處理觸控。\n\n不會讀取其他應用程式的文字或無障礙內容。畫面在手機內處理，不儲存或傳送到伺服器。\n\n請先關閉 FoldPatch，再在系統無障礙設定中關閉服務。關閉 FoldPatch 會恢復原畫面，但不會移除此權限。</string>
+    <string name="wizard_agree" formatted="false">同意並繼續</string>
+    <string name="wizard_keyboard_title" formatted="false">在可觸控的一側輸入</string>
+    <string name="wizard_keyboard_body" formatted="false">FoldPatch 啟用期間，Shizuku 會啟用並切換到 FoldPatch 鍵盤，顯示在可觸控的一側。文字會傳入目前選取的應用程式輸入框，FoldPatch 不會儲存或傳送到伺服器。\n\n摺疊手機或關閉 FoldPatch 後，會恢復原鍵盤。也可在系統設定中更換鍵盤。</string>
+    <string name="wizard_range_body" formatted="false">現在請直向展開手機並解鎖。\n\n1. 點選「開啟 FoldPatch」。按鈕變為「調整螢幕範圍」後，再點選一次。\n\n2. 在刻度頁面使用滑桿和 − / + 按鈕，分別調整左右兩側可見的寬度。\n\n3. 點選「預覽」確認後，再點選「儲存此範圍」。如果不儲存，15秒後會恢復之前的範圍。</string>
+    <string name="wizard_unfold" formatted="false">從這一步開始需要使用內螢幕。請直向展開手機並解鎖。</string>
+    <string name="wizard_practice_title" formatted="false">試試操作方式</string>
+    <string name="wizard_bar_body">下方操作列用於練習。每次點選把手，會依序顯示：單個按鈕 → 所選按鈕 → 全部按鈕。\n\n日常使用時，選擇另一側或「%1$s」，就能把可觸控的一側當作觸控板。</string>
+    <string name="wizard_practice_done" formatted="false">結束練習</string>
+    <string name="wizard_ready_title" formatted="false">準備就緒</string>
+    <string name="wizard_ready_body" formatted="false">現在可以在平常使用的應用程式中使用 FoldPatch 了。\n\n如果 Shizuku 停止執行，我們會告訴你如何重新啟動。已儲存的螢幕範圍不需要重新設定。</string>
+    <string name="wizard_notification_body" formatted="false">開啟通知後，點選通知即可開啟 FoldPatch 設定。不允許通知也能使用 FoldPatch。</string>
+    <string name="wizard_finish" formatted="false">使用 FoldPatch</string>
+    <string name="wizard_later" formatted="false">稍後準備</string>
+    <string name="wizard_resume" formatted="false">可以從上次停下的準備步驟繼續。</string>
+    <string name="wizard_developer_required" formatted="false">尚未啟用開發人員選項。請在關於手機中連續點選版本號碼 7 次，然後返回。</string>
+    <string name="wizard_developer_title" formatted="false">請開啟開發人員選項</string>
+    <string name="wizard_wireless_title" formatted="false">請開啟無線偵錯</string>
+    <string name="wizard_pair_title" formatted="false">請配對並啟動 Shizuku</string>
+    <string name="wizard_restart_title" formatted="false">請重新啟動 Shizuku</string>
+    <string name="wizard_restart_body" formatted="false">Shizuku 已停止執行。點選下方按鈕開啟 Shizuku，再點選「啟動」。顯示正在執行後，返回 FoldPatch。\n\n啟動時可能需要連接可信任的 Wi-Fi 並開啟無線偵錯。如果 Shizuku 要求配對，請依照它的提示操作。\n\n你的螢幕範圍和 FoldPatch 設定仍然保留。</string>
+</resources>

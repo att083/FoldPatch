@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Shared legacy/header icon. Replace foldpatch_mark.png to update all brand marks. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/brand_icon_background" />
+    <item><bitmap android:src="@drawable/foldpatch_mark" android:gravity="fill" android:filter="true" /></item>
+</layer-list>
