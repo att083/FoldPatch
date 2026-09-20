@@ -6,15 +6,19 @@
 
 ## 비슷한 불편을 겪은 공개 사례
 
-아래는 서로 다른 사용자가 공개 커뮤니티에 올린 경험입니다. 같은 형태의 불편이 존재한다는 근거이며, 고장률·원인·폴드패치 사용자 수를 입증하는 자료는 아닙니다.
+**가운데가 검게 가려지거나 터치가 고장나는 사례는 2025–2026년에도 올라오고 있습니다.** 2026-09-21에 확인한 서로 다른 사용자의 원글을 최근 순으로 정리했습니다. 댓글이 추가된 날짜가 아닌 원글 게시 시기입니다.
 
 | 게시 시기 | 모델과 사용자가 설명한 증상 | 원문 |
 | --- | --- | --- |
-| 2022-01-31 | Fold3를 펼쳤을 때 접힘 부근의 굵은 검은 줄과 오른쪽 터치 불응 | [Samsung EU Community](https://eu.community.samsung.com/t5/galaxy-z-fold-z-flip/samsung-galaxy-fold-3-black-line-in-crease/td-p/4726218/page/3) |
-| 2022 | Z Fold3 접힘 부근의 검은 줄과 한쪽 터치 불량 | [Samsung Members](https://r2.community.samsung.com/t5/Samsung-Care/Samsung-Z-Fold-3-Black-Line-on-the-Crease/td-p/11432325) |
+| 2026-09 | Z Fold6 접힘 부근의 검은 세로줄이 점점 넓어지고, 해당 부근의 터치 반응도 이상해짐 | [Samsung Members](https://r2.community.samsung.com/t5/Galaxy-Z-Flip-Galaxy-Z-Fold/Galaxy-Z-Fold6-Inner-Screen-Developing-Black-Line-at-Folding/m-p/22910072) |
+| 2026-07-16 | Z Fold6 내부 화면의 검은 줄과 화면 전체 터치 불응 — 한쪽 터치가 필요한 폴드패치의 현재 대상 밖 | [Samsung Members](https://r2.community.samsung.com/t5/Galaxy-Z-Fold/Black-line-fold-6/td-p/22537487) |
+| 2025-02-14 | Z Fold3 내부 화면 가운데의 검은 띠와 오른쪽 터치 불량 | [r/GalaxyFold](https://www.reddit.com/r/GalaxyFold/comments/1ipfnaz/) |
+| 2025-01-06 | Pixel 9 Pro Fold 가운데의 검은 줄, 왼쪽 터치는 되지 않고 오른쪽만 작동 | [Google Pixel Community](https://support.google.com/pixelphone/thread/317231965/google-pixel-9-pro-fold-inside-screen-not-working?hl=en) |
 | 2022-07-29 | Z Fold3 내부 화면 가운데의 굵은 검은 줄과 오른쪽 터치 불량 | [Samsung EU Community](https://eu.community.samsung.com/t5/galaxy-z-fold-z-flip/z-fold3-inner-screen-no-longer-working/td-p/5770195) |
 
-폴드패치의 현재 대상은 **양쪽 화면 일부는 보이고 한쪽 이상은 터치가 되는 경우**입니다. 내부 화면 전체가 보이지 않거나 어느 쪽도 터치되지 않는 경우를 해결한다고 주장하지 않습니다.
+이 사례들은 비슷한 불편이 최근에도 존재한다는 근거이며, 고장률·원인·폴드패치 사용자 수를 입증하는 자료는 아닙니다.
+
+폴드패치의 현재 대상은 **양쪽 화면 일부는 보이고 한쪽 이상은 터치가 되는 경우**입니다. 위 사례의 기종들이 모두 지원된다는 뜻은 아닙니다. 실기기 작동 확인은 **Galaxy Z Fold3 / Android 15 / One UI 7**에서 했으며, 자세한 범위는 [호환성](COMPATIBILITY.md)에 정리했습니다.
 
 ## 기존 도구와 무엇이 다른가요?
 

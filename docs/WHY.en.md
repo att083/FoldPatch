@@ -6,15 +6,19 @@ FoldPatch started when the maintainer's Galaxy Z Fold3 developed an unreadable c
 
 ## Reports of a similar problem
 
-These are three independent public user reports. They establish that others describe this difficulty, not its failure rate, hardware cause, or adoption of FoldPatch.
+**Reports of black areas at the crease and failed touch input continue into 2025–2026.** These independent user reports were checked on 2026-09-21 and are listed newest first. Dates refer to the original posts, not later replies.
 
 | Posted | Model and reported symptoms | Original report |
 | --- | --- | --- |
-| 2022-01-31 | Fold3: thick black line near the crease when unfolded; right side unresponsive | [Samsung EU Community](https://eu.community.samsung.com/t5/galaxy-z-fold-z-flip/samsung-galaxy-fold-3-black-line-in-crease/td-p/4726218/page/3) |
-| 2022 | Z Fold3: black line at the crease and touch failure on one side | [Samsung Members](https://r2.community.samsung.com/t5/Samsung-Care/Samsung-Z-Fold-3-Black-Line-on-the-Crease/td-p/11432325) |
+| 2026-09 | Z Fold6: a widening black line along the crease and abnormal touch response around it | [Samsung Members](https://r2.community.samsung.com/t5/Galaxy-Z-Flip-Galaxy-Z-Fold/Galaxy-Z-Fold6-Inner-Screen-Developing-Black-Line-at-Folding/m-p/22910072) |
+| 2026-07-16 | Z Fold6: black line on the inner display and no touch response anywhere — outside FoldPatch's current scope, which requires a working touch side | [Samsung Members](https://r2.community.samsung.com/t5/Galaxy-Z-Fold/Black-line-fold-6/td-p/22537487) |
+| 2025-02-14 | Z Fold3: black bar down the center of the inner display; right side unresponsive | [r/GalaxyFold](https://www.reddit.com/r/GalaxyFold/comments/1ipfnaz/) |
+| 2025-01-06 | Pixel 9 Pro Fold: black line down the middle; only the right side responds to touch | [Google Pixel Community](https://support.google.com/pixelphone/thread/317231965/google-pixel-9-pro-fold-inside-screen-not-working?hl=en) |
 | 2022-07-29 | Z Fold3: thick black line in the inner display's center; right-side touch failure | [Samsung EU Community](https://eu.community.samsung.com/t5/galaxy-z-fold-z-flip/z-fold3-inner-screen-no-longer-working/td-p/5770195) |
 
-FoldPatch currently targets phones with **visible space on both sides and working touch on at least one side**. It does not claim to solve a completely unreadable inner display or loss of touch on both sides.
+These reports show that similar difficulties are still being reported. They do not establish failure rates, hardware causes, or adoption of FoldPatch.
+
+FoldPatch currently targets phones with **visible space on both sides and working touch on at least one side**. The models above are not a list of supported devices. Physical-device testing is limited to **Galaxy Z Fold3 / Android 15 / One UI 7**; see [compatibility](COMPATIBILITY.en.md) for details.
 
 ## How existing tools compare
 
