@@ -2,7 +2,9 @@
 
 # FoldPatch · 폴드패치
 
-**[APK 다운로드·설치 안내](docs/INSTALL.md)** · [English](README.md) · [호환성](docs/COMPATIBILITY.md)
+[English](README.md) · [한국어](README.ko.md) · [日本語](README.ja.md) · [简体中文](README.zh-Hans.md) · [繁體中文](README.zh-Hant.md)
+
+**[APK 다운로드·설치 안내](docs/INSTALL.md)** · [호환성](docs/COMPATIBILITY.md)
 
 **가운데 화면이 깨지고 한쪽 터치만 남은 폴드폰을 계속 쓰도록 돕는 Android 앱입니다.**
 

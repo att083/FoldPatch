@@ -1,5 +1,9 @@
 # 처음 설치하는 분을 위한 안내
 
+[English](INSTALL.en.md) · [한국어](INSTALL.md) · [日本語](INSTALL.ja.md) · [简体中文](INSTALL.zh-Hans.md) · [繁體中文](INSTALL.zh-Hant.md)
+
+[README로 돌아가기](../README.ko.md)
+
 ## 준비할 것
 
 - 확인된 환경: Galaxy Z Fold3 SM-F926N, Android 15, One UI 7.

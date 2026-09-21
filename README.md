@@ -2,7 +2,9 @@
 
 # FoldPatch
 
-**[Download and install the APK](docs/INSTALL.en.md)** · [한국어](README.ko.md) · [Compatibility](docs/COMPATIBILITY.en.md)
+[English](README.md) · [한국어](README.ko.md) · [日本語](README.ja.md) · [简体中文](README.zh-Hans.md) · [繁體中文](README.zh-Hant.md)
+
+**[Download and install the APK](docs/INSTALL.en.md)** · [Compatibility](docs/COMPATIBILITY.en.md)
 
 **An Android app to keep a foldable phone usable with a dead center display and touch working on only one side.**
 

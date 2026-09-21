@@ -1,6 +1,8 @@
 # Install and use FoldPatch
 
-[한국어](INSTALL.md) · [Back to README](../README.md)
+[English](INSTALL.en.md) · [한국어](INSTALL.md) · [日本語](INSTALL.ja.md) · [简体中文](INSTALL.zh-Hans.md) · [繁體中文](INSTALL.zh-Hant.md)
+
+[Back to README](../README.md)
 
 FoldPatch is an early alpha. Hardware testing has used a **Galaxy Z Fold3 (SM-F926N), Android 15 / One UI 7**. Android 16 and 17 have emulator tests only. Long-duration use and every system transition have not been verified. Android 14 is the minimum installation version, not a claim of support for every device. [Compatibility and evidence](COMPATIBILITY.en.md).
 
