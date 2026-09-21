@@ -8,13 +8,13 @@
 
 FoldPatch is open source and started with the maintainer's own damaged Galaxy Z Fold3, to help people in the same situation keep using their phone until repair is possible. [Background and related tools](docs/WHY.en.md).
 
-## Before and after on a real phone
+## Before and after screen-area adjustment
 
-| Before | After |
+| Before: left 50% · right 50% | After: left 44% · right 43.5% |
 | --- | --- |
-| [<img src="docs/media/chrome-before-fold3.jpg" width="340" alt="Before FoldPatch: the damaged center of a Fold3 obscures text and images on a Chrome page." />](docs/media/chrome-before-fold3.jpg) | [<img src="docs/media/chrome-after-fold3.jpg" width="340" alt="After FoldPatch: the same Chrome page reflows to the available width, with the toolbar on the left." />](docs/media/chrome-after-fold3.jpg) |
+| [<img src="docs/media/range-before-fold3.jpg" width="340" alt="Before adjustment: the damaged center of a Fold3 hides numbers 8 and 9." />](docs/media/range-before-fold3.jpg) | [<img src="docs/media/range-after-fold3.jpg" width="340" alt="After adjustment: numbers 1 through 16 are visible across the two sides of the Fold3." />](docs/media/range-after-fold3.jpg) |
 
-**Photographs of an actual Galaxy Z Fold3 / Android 15.** The panel damage remains; the webpage reflows to the usable width. [See all before-and-after photos, including split screen and screen-area adjustment →](docs/REAL_USE.en.md)
+**Photographs of a Galaxy Z Fold3 · Android 15.** [See Chrome and split-screen before-and-after photos →](docs/REAL_USE.en.md)
 
 ## What it does
 

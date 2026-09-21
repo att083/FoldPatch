@@ -8,13 +8,13 @@
 
 직접 쓰던 갤럭시 Z 폴드3가 고장 나면서 만든 오픈소스 앱입니다. 당장 수리하기 어려워도, 같은 상황에 있는 사람이 남은 화면으로 폰을 계속 사용할 수 있기를 바랍니다. [비슷한 고장 사례와 기존 도구 비교](docs/WHY.md).
 
-## 실제 폰에서 적용 전후
+## 화면 범위 조정 전후
 
-| 적용 전 | 적용 후 |
+| 조정 전: 왼쪽 50% · 오른쪽 50% | 조정 후: 왼쪽 44% · 오른쪽 43.5% |
 | --- | --- |
-| [<img src="docs/media/chrome-before-fold3.jpg" width="340" alt="폴드패치 적용 전, 손상된 폴드3 가운데에 크롬 페이지의 글과 사진이 가려진 모습." />](docs/media/chrome-before-fold3.jpg) | [<img src="docs/media/chrome-after-fold3.jpg" width="340" alt="폴드패치 적용 후, 같은 크롬 페이지가 줄어든 폭에 맞춰 다시 배치되고 왼쪽에 조작바가 표시된 모습." />](docs/media/chrome-after-fold3.jpg) |
+| [<img src="docs/media/range-before-fold3.jpg" width="340" alt="범위 조정 전: 가운데 손상 구간에 숫자 8과 9가 가려진 폴드3." />](docs/media/range-before-fold3.jpg) | [<img src="docs/media/range-after-fold3.jpg" width="340" alt="범위 조정 후: 1부터 16까지의 숫자가 양쪽 화면에 보이는 폴드3." />](docs/media/range-after-fold3.jpg) |
 
-갤럭시 Z 폴드3 / Android 15 **실물 촬영 사진**입니다. 패널 손상은 그대로지만, 적용 후에는 사용할 폭에 맞춰 웹페이지가 다시 배치됩니다. [멀티윈도우·화면 범위 조정까지 전후 사진 보기 →](docs/REAL_USE.md)
+**갤럭시 Z 폴드3 · Android 15 실물 촬영.** [크롬·멀티윈도우 사용 전후 보기 →](docs/REAL_USE.md)
 
 ## 무엇을 할 수 있나요?
 
