@@ -1,4 +1,4 @@
-# v0.1.0-alpha.4 — 첫 공개 시험판 후보
+# v0.1.0-alpha.4 — 첫 공개 시험판
 
 [English](RELEASE_NOTES.en.md) · [설치·복구](INSTALL.md) · [검증 결과](RELEASE_REVIEW.md)
 
@@ -26,7 +26,7 @@
 
 ## 배포 파일
 
-첫 GitHub 릴리스 게시를 준비 중이며, 다음 파일을 첨부할 예정입니다.
+[릴리스](https://github.com/att083/FoldPatch/releases/tag/v0.1.0-alpha.4)에서 다음 파일을 받을 수 있습니다.
 
 | 파일 | 용도 |
 | --- | --- |

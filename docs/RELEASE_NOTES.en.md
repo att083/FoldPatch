@@ -1,4 +1,4 @@
-# v0.1.0-alpha.4 — first public alpha candidate
+# v0.1.0-alpha.4 — first public alpha
 
 [한국어](RELEASE_NOTES.md) · [Install and recover](INSTALL.en.md) · [Validation](RELEASE_REVIEW.en.md)
 
@@ -26,7 +26,7 @@ Landscape and concurrent screen-reader use are not supported. Keyboard input is 
 
 ## Release files
 
-The first GitHub release is being prepared. Its assets will contain:
+The [release](https://github.com/att083/FoldPatch/releases/tag/v0.1.0-alpha.4) includes:
 
 | File | Use |
 | --- | --- |
