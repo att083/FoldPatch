@@ -8,6 +8,14 @@
 
 FoldPatch is open source and started with the maintainer's own damaged Galaxy Z Fold3, to help people in the same situation keep using their phone until repair is possible. [Background and related tools](docs/WHY.en.md).
 
+## Before and after on a real phone
+
+| Before | After |
+| --- | --- |
+| [<img src="docs/media/chrome-before-fold3.jpg" width="340" alt="Before FoldPatch: the damaged center of a Fold3 obscures text and images on a Chrome page." />](docs/media/chrome-before-fold3.jpg) | [<img src="docs/media/chrome-after-fold3.jpg" width="340" alt="After FoldPatch: the same Chrome page reflows to the available width, with the toolbar on the left." />](docs/media/chrome-after-fold3.jpg) |
+
+**Photographs of an actual Galaxy Z Fold3 / Android 15.** The panel damage remains; the webpage reflows to the usable width. [See all before-and-after photos, including split screen and screen-area adjustment →](docs/REAL_USE.en.md)
+
 ## What it does
 
 - **Continue the screen across the gap.** Apps get a width that fits the two usable sides combined. FoldPatch displays that single screen across the damaged strip without horizontal squashing. Use one full-screen app or your existing split-screen arrangement.
