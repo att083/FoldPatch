@@ -16,7 +16,7 @@
 
 한국어 환경에서는 앱 목록·권한 창에 **폴드패치**로 표시됩니다. 다른 지원 언어에서는 **FoldPatch**입니다. 앱 ID는 `dev.foldpatch`입니다. 이전 ID로 설치한 개발판은 별도 앱이며 설정과 권한이 자동으로 이전되지 않습니다. 같은 앱 ID와 서명의 APK끼리는 삭제 없이 업데이트할 수 있습니다.
 
-설치용 파일은 **`foldpatch-release.apk`**입니다. 직접 빌드할 필요가 없습니다. **[APK 다운로드](https://github.com/att083/FoldPatch/releases/download/v0.1.0-alpha.4/foldpatch-release.apk)**를 눌러 받으세요.
+설치용 파일은 **`foldpatch-release.apk`**입니다. 직접 빌드할 필요가 없습니다. **[APK 다운로드](https://github.com/att083/FoldPatch/releases/download/v0.1.0-alpha.5/foldpatch-release.apk)**를 눌러 받으세요.
 
 **Source code (zip)**은 소스 코드이며, 이름에 **unsigned**가 들어간 APK는 서명 전 파일입니다. 설치용 APK를 선택하세요.
 

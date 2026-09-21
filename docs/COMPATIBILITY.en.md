@@ -2,11 +2,11 @@
 
 [한국어・technical details](COMPATIBILITY.md) · [README](../README.md) · [Install and recover](INSTALL.en.md)
 
-**Unreleased alpha.5:** compile/target API 37, minimum API 35 (Android 15). Its update, input and folding/unfolding were checked on the Fold3 / Android 15; see the separate [candidate validation](RELEASE_REVIEW.en.md#unreleased-alpha5--target-api-37). The table below records alpha.4 and earlier development results.
+**Published alpha.5:** compile/target API 37, minimum API 35 (Android 15). Its update, input and folding/unfolding were checked on the Fold3 / Android 15; see the separate [validation](RELEASE_REVIEW.en.md#published-alpha5--target-api-37). The table below records alpha.4 and earlier development results.
 
 **Android 14 is not supported.** Reflow caused the OS process to terminate on the API 34 AOSP emulator. From alpha.5, the APK requires Android 15 or newer. The published alpha.4 allowed installation on Android 14, but that does not mean it is supported.
 
-Published release: **v0.1.0-alpha.4**, checked 2026-09-20. **Physical-device testing is limited to Samsung Galaxy Z Fold3 / Android 15 / One UI 7. Android 16 and 17 have emulator results only.**
+Current release: **v0.1.0-alpha.5**, checked 2026-09-21. **Physical-device testing is limited to Samsung Galaxy Z Fold3 / Android 15 / One UI 7. Android 16 and 17 have emulator results only.**
 
 ## Requirements
 

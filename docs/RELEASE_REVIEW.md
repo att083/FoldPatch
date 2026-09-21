@@ -2,7 +2,7 @@
 
 [English](RELEASE_REVIEW.en.md) · [호환성 상세](COMPATIBILITY.md) · [개발 단계별 이력](research/2026-09-20-development-history.md)
 
-## 미배포 alpha.5 · target API 37
+## 공개 alpha.5 · target API 37
 
 2026-09-21 로컬 확인. 후보 버전은 compile/target API 37, 최소 Android 15/API 35를 사용합니다. **Fold3 / Android 15에서 target 37 후보의 업데이트와 핵심 동작을 확인했습니다.** 공개 alpha.4 APK와 그 버전의 GitHub 검사 결과는 그대로입니다.
 
@@ -13,7 +13,9 @@ Fold3의 기존 설치와 서명을 맞추기 위해 release 빌드를 기존 �
 - Android 17에서는 알림·빠른 설정 타일로 설정 열기, 화면 껐다 켜기, 이미 허용한 Shizuku 서버 재시작 후 연결 복구도 통과했습니다. 무선 페어링이나 재부팅 후 Shizuku 자동 시작 시험은 아닙니다.
 - Android 15 가상 기기에서는 재배치·복구·50% 전환 검사를 통과했습니다. 공개 서명 alpha.4에서 같은 서명의 alpha.5로 업데이트해 44.5%/45% 화면 범위·준비 완료 상태·Shizuku 권한 유지를 확인했고, 업데이트 후 설정 뒤로 가기·범위 취소도 통과했습니다.
 - **Android 14 지원 제외:** 최소 버전을 올리기 전 API 34 AOSP 가상 기기에 설치는 됐지만, 재배치 시험 중 `WindowManagerService.mirrorDisplay` / `nativeMirrorSurface`에서 `system_server`가 종료됐습니다. Android 14는 지원에서 제외하며 새 APK는 Android 15 이상에서만 설치됩니다.
-- 호스트 검사·번역 리소스·debug/release 빌드·서명 인증서를 로컬에서 확인했습니다. 추가한 권한은 없습니다. Play Store 심사 통과나 새 GitHub 원격 CI 결과를 의미하지 않습니다.
+- 호스트 검사·번역 리소스·debug/release 빌드·서명 인증서를 로컬에서 확인했습니다. 추가한 권한은 없습니다. Play Store 심사 통과를 의미하지 않습니다.
+
+공개 소스 커밋은 [`3e82aa6`](https://github.com/att083/FoldPatch/commit/3e82aa6416c55c1b3621291920fa3d6e461d0261)입니다. 해당 커밋의 [GitHub 원격 검사](https://github.com/att083/FoldPatch/actions/runs/35579355313)가 통과했고, 원격 빌드 APK의 앱 내용과 소스 ZIP이 공개 파일과 일치합니다. 서명 APK·체크섬·소스는 [alpha.5 릴리스](https://github.com/att083/FoldPatch/releases/tag/v0.1.0-alpha.5)에 있습니다.
 
 위 가상 기기 동작 시험은 최소 버전 변경 전에 진행했으며, 하한 변경만을 위해 반복하지 않았습니다. 하한 변경 후 호스트 검사·debug/release 빌드·APK의 최소 API 35와 target API 37·서명·공개 문서 링크를 별도로 확인했습니다.
 

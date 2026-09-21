@@ -8,7 +8,7 @@ FoldPatch is an early alpha. Hardware testing has used a **Galaxy Z Fold3 (SM-F9
 
 ## 1. Get the APK
 
-Use the installable **`foldpatch-release.apk`**; you do not need to build the app. **[Download APK](https://github.com/att083/FoldPatch/releases/download/v0.1.0-alpha.4/foldpatch-release.apk)**. “Source code (zip)” is not installable on Android. A file ending in `-unsigned.apk` is not the user release either.
+Use the installable **`foldpatch-release.apk`**; you do not need to build the app. **[Download APK](https://github.com/att083/FoldPatch/releases/download/v0.1.0-alpha.5/foldpatch-release.apk)**. “Source code (zip)” is not installable on Android. A file ending in `-unsigned.apk` is not the user release either.
 
 Open the APK. Android may ask you to allow installation from the browser or file app that opened it. Allow that source only if you trust where you obtained the file. Existing installations can update without losing settings when both APKs use the same signing key. Development and public builds may use different keys; do not uninstall automatically to bypass a signature mismatch.
 

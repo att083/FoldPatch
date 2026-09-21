@@ -8,7 +8,7 @@ FoldPatch 目前为早期 Alpha 版本。真机验证环境为 **Galaxy Z Fold3�
 
 ## 1. 获取 APK
 
-请使用可安装的 **`foldpatch-release.apk`**，无需自行编译。点击 **[下载 APK](https://github.com/att083/FoldPatch/releases/download/v0.1.0-alpha.4/foldpatch-release.apk)** 获取安装文件。“Source code (zip)” 不能安装到 Android 上，以 `-unsigned.apk` 结尾的文件也不是面向用户的发布版。
+请使用可安装的 **`foldpatch-release.apk`**，无需自行编译。点击 **[下载 APK](https://github.com/att083/FoldPatch/releases/download/v0.1.0-alpha.5/foldpatch-release.apk)** 获取安装文件。“Source code (zip)” 不能安装到 Android 上，以 `-unsigned.apk` 结尾的文件也不是面向用户的发布版。
 
 打开 APK 时，Android 可能要求允许浏览器或文件管理应用安装应用。请仅在信任文件来源时允许。两个 APK 使用相同签名密钥时，可以保留设置直接更新。开发版和公开版可能使用不同密钥；遇到签名不匹配时，不要为了绕过错误直接卸载旧版。
 

@@ -1,9 +1,9 @@
-# Unreleased — v0.1.0-alpha.5
+# v0.1.0-alpha.5 — Android 15+ / target API 37
 
 - Compile/target API 37; minimum raised to Android 15/API 35. Android 14 is not supported.
 - Settings and calibration handle modern Android back gestures and system-bar insets, keeping the ruler tied to the physical screen edges.
 - Application ID, settings and distribution signing key are retained. No new permissions.
-- **Fold3 / Android 15 checks passed for retained settings, input and folding/unfolding.** See [candidate checks](RELEASE_REVIEW.en.md#unreleased-alpha5--target-api-37). This APK has not been published; the alpha.4 download below is unchanged.
+- **Fold3 / Android 15 checks passed for retained settings, input and folding/unfolding.** See [validation](RELEASE_REVIEW.en.md#published-alpha5--target-api-37). **[Download alpha.5 APK](https://github.com/att083/FoldPatch/releases/download/v0.1.0-alpha.5/foldpatch-release.apk)** · [Release files](https://github.com/att083/FoldPatch/releases/tag/v0.1.0-alpha.5). Earlier alpha.4 records follow below.
 
 ---
 

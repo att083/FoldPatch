@@ -2,7 +2,7 @@
 
 [English](COMPATIBILITY.en.md)
 
-**미배포 alpha.5:** compile/target API 37, 최소 Android 15/API 35입니다. Fold3 / Android 15에서 이 후보의 업데이트·입력·접기와 펼치기를 확인했습니다. [후보 검증 기록](RELEASE_REVIEW.md#미배포-alpha5--target-api-37)을 따로 확인하세요. 아래는 alpha.4 및 이전 개발 단계의 결과입니다.
+**공개 alpha.5:** compile/target API 37, 최소 Android 15/API 35입니다. Fold3 / Android 15에서 이 버전의 업데이트·입력·접기와 펼치기를 확인했습니다. [검증 기록](RELEASE_REVIEW.md#공개-alpha5--target-api-37)을 따로 확인하세요. 아래는 alpha.4 및 이전 개발 단계의 결과입니다.
 
 **Android 14는 지원하지 않습니다.** API 34 AOSP 가상 기기의 재배치 과정에서 OS 프로세스가 종료됐습니다. alpha.5부터 APK도 Android 15 이상에서만 설치됩니다. 공개 alpha.4는 Android 14에 설치할 수 있었지만 지원을 의미하지 않습니다.
 

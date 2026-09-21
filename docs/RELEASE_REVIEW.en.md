@@ -2,7 +2,7 @@
 
 [한국어](RELEASE_REVIEW.md) · [Compatibility](COMPATIBILITY.en.md) · [Historical development log (Korean)](research/2026-09-20-development-history.md)
 
-## Unreleased alpha.5 · target API 37
+## Published alpha.5 · target API 37
 
 Checked locally on 2026-09-21. The candidate uses compile/target API 37 and minimum API 35 (Android 15). **The target-37 candidate passed an update and core-operation check on the Fold3 / Android 15.** The public alpha.4 APK and its GitHub validation run are unchanged.
 
@@ -13,7 +13,9 @@ To preserve the existing Fold3 installation, the release build was signed with i
 - Android 17 additionally passed notification and Quick Settings entry, screen-off/on recovery and reconnect after restarting an already-authorized Shizuku server. This does not test wireless pairing or automatic Shizuku startup after reboot.
 - Android 15 emulator: reflow/recovery and full-width probes passed. The signed public alpha.4 was updated in place to signed alpha.5; saved 44.5%/45% widths, completed setup and Shizuku authorization were retained. Settings back and calibration cancellation passed after the update.
 - **Android 14 excluded:** before raising the minimum, the API 34 AOSP emulator installed the candidate, but a reflow probe caused `system_server` to terminate in `WindowManagerService.mirrorDisplay` / `nativeMirrorSurface`. Android 14 is now excluded from support; the new APK requires Android 15 or newer.
-- Host tests, localized resources, debug/release builds and the signing certificate passed locally. The candidate adds no permissions. It is not a Play Store approval or a new GitHub-hosted CI result.
+- Host tests, localized resources, debug/release builds and the signing certificate passed locally. The candidate adds no permissions. This is not a Play Store approval.
+
+Release source: [`3e82aa6`](https://github.com/att083/FoldPatch/commit/3e82aa6416c55c1b3621291920fa3d6e461d0261). [GitHub validation passed](https://github.com/att083/FoldPatch/actions/runs/35579355313); its APK payload and source ZIP match the release files. The signed APK, checksum and source are in the [alpha.5 release](https://github.com/att083/FoldPatch/releases/tag/v0.1.0-alpha.5).
 
 The emulator operation checks above preceded the minimum-version change; they were not repeated solely for that change. After raising the minimum, host tests, debug/release builds, APK minimum API 35 and target API 37, signing and public documentation links were checked separately.
 

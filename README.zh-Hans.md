@@ -4,7 +4,7 @@
 
 [English](README.md) · [한국어](README.ko.md) · [日本語](README.ja.md) · **简体中文** · [繁體中文](README.zh-Hant.md)
 
-**[下载 APK](https://github.com/att083/FoldPatch/releases/download/v0.1.0-alpha.4/foldpatch-release.apk)** · [安装指南](docs/INSTALL.zh-Hans.md) · [兼容性（英文）](docs/COMPATIBILITY.en.md)
+**[下载 APK](https://github.com/att083/FoldPatch/releases/download/v0.1.0-alpha.5/foldpatch-release.apk)** · [安装指南](docs/INSTALL.zh-Hans.md) · [兼容性（英文）](docs/COMPATIBILITY.en.md)
 
 **让屏幕中间损坏、只有一侧触控正常的折叠屏手机继续可用的 Android 应用。**
 
@@ -52,7 +52,7 @@
 
 **直接安装现成的 APK，无需自行编译。** 目前为早期 Alpha 版本。
 
-1. 下载并安装 **[foldpatch-release.apk](https://github.com/att083/FoldPatch/releases/download/v0.1.0-alpha.4/foldpatch-release.apk)**。
+1. 下载并安装 **[foldpatch-release.apk](https://github.com/att083/FoldPatch/releases/download/v0.1.0-alpha.5/foldpatch-release.apk)**。
 2. 打开 FoldPatch，按照应用内引导选择触控正常的一侧，准备 Shizuku、权限和键盘。
 3. 展开手机，调整并保存两侧可见宽度，然后返回平时使用的应用。
 

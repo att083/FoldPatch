@@ -1,9 +1,9 @@
-# 미배포 — v0.1.0-alpha.5
+# v0.1.0-alpha.5 — Android 15 이상 · target API 37
 
 - compile/target API 37로 변경. 최소 버전을 Android 15/API 35로 올립니다. Android 14는 지원하지 않습니다.
 - 최신 Android 뒤로 가기와 시스템 바 여백에 맞춰 설정·범위 조정을 처리합니다. 눈금은 실제 화면 양 끝을 기준으로 유지합니다.
 - 앱 ID·기존 설정·배포 서명 키를 유지하며 새 권한을 추가하지 않습니다.
-- **Fold3 / Android 15에서 설정 유지·입력·접기와 펼치기를 확인했습니다.** [후보 검사 결과](RELEASE_REVIEW.md#미배포-alpha5--target-api-37)를 확인하세요. 이 APK는 아직 배포하지 않았으며 아래 alpha.4 다운로드는 그대로입니다.
+- **Fold3 / Android 15에서 설정 유지·입력·접기와 펼치기를 확인했습니다.** [검증 결과](RELEASE_REVIEW.md#공개-alpha5--target-api-37)를 확인하세요. **[alpha.5 APK 다운로드](https://github.com/att083/FoldPatch/releases/download/v0.1.0-alpha.5/foldpatch-release.apk)** · [릴리스 파일](https://github.com/att083/FoldPatch/releases/tag/v0.1.0-alpha.5). 아래는 이전 alpha.4 기록입니다.
 
 ---
 
