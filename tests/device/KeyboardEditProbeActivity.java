@@ -1,4 +1,4 @@
-package dev.reachpad;
+package dev.foldpatch;
 
 import android.app.Activity;
 import android.content.*;
@@ -63,11 +63,11 @@ public final class KeyboardEditProbeActivity extends Activity {
         case 17: text(sample+"x가");tap(R.string.key_edit);break;
         case 18: expect(!(Boolean)get(keyboard,"editing"),"Close edit tools");restoreClip();
             String message="PASS selection, copy, cut, paste, emoji arrows, Hangul composition and insertion";
-            result.setText(message);android.util.Log.i("ReachPadEditTest",message);return;
+            result.setText(message);android.util.Log.i("FoldPatchEditTest",message);return;
         }
         handler.postDelayed(this::runStep,350);
     }catch(Throwable e){fail(e);}}
     private void restoreClip(){if(clipSaved){clipSaved=false;if(previousClip==null)clipboard.clearPrimaryClip();else clipboard.setPrimaryClip(previousClip);previousClip=null;}}
-    private void fail(Throwable e){restoreClip();result.setText("FAIL: "+e);android.util.Log.e("ReachPadEditTest","FAIL step "+step,e);}
+    private void fail(Throwable e){restoreClip();result.setText("FAIL: "+e);android.util.Log.e("FoldPatchEditTest","FAIL step "+step,e);}
     @Override public void onDestroy(){handler.removeCallbacksAndMessages(null);restoreClip();super.onDestroy();}
 }

@@ -1,4 +1,4 @@
-package dev.reachpad.experiment;
+package dev.foldpatch.experiment;
 import android.os.SystemClock;
 import android.view.*;
 /** Sends one bounded touch stream, including an optional stationary hold for recents. */

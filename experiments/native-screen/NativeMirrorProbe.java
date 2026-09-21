@@ -1,4 +1,4 @@
-package dev.reachpad.experiment;
+package dev.foldpatch.experiment;
 
 import android.graphics.Rect;
 import android.os.IBinder;
@@ -70,8 +70,8 @@ public final class NativeMirrorProbe {
                 throw new IllegalStateException("Requires awake portrait inner display; got " + w + "x" + h);
             IBinder binder = (IBinder) Class.forName("android.os.ServiceManager").getMethod("getService", String.class).invoke(null, "window");
             Object wm = Class.forName("android.view.IWindowManager$Stub").getMethod("asInterface", IBinder.class).invoke(null, binder);
-            root = layer("ReachPad Native Test (auto restore)", "setContainerLayer", null);
-            SurfaceControl black = layer("ReachPad Native Gap", "setColorLayer", root);
+            root = layer("FoldPatch Native Test (auto restore)", "setContainerLayer", null);
+            SurfaceControl black = layer("FoldPatch Native Gap", "setColorLayer", root);
             SurfaceControl left = mirror(wm), right = mirror(wm);
             int cut = w / 2, leftEdge = Math.round(w * .45f), rightEdge = Math.round(w * .55f);
             float leftScale = (float) leftEdge / cut;

@@ -12,7 +12,17 @@ with tempfile.TemporaryDirectory() as tmp:
     output = Path(tmp) / 'AndroidManifest.xml'
     subprocess.run([sys.executable, str(ROOT/'scripts/prepare-manifest.py'), 'release', str(output)], check=True)
     manifest = ET.parse(output).getroot()
+    assert manifest.get('package') == 'dev.foldpatch'
     app = manifest.find('application')
+    assert {p.get(A+'authorities') for p in app.findall('provider')} == {'dev.foldpatch.shizuku'}
+    for component in ('pointer_accessibility.xml', 'keyboard.xml'):
+        settings = ET.parse(ROOT/'res/xml'/component).getroot().get(A+'settingsActivity')
+        assert settings == 'dev.foldpatch.NativeActivity', (component, settings)
+    for source in (ROOT/'src').rglob('*.java'):
+        text = source.read_text()
+        assert 'dev.reachpad' not in text, source
+        if source.is_relative_to(ROOT/'src/dev/foldpatch'):
+            assert text.startswith('package dev.foldpatch;'), source
     assert app.get(A+'debuggable') == 'false'
     assert app.get(A+'allowBackup') == 'false'
     assert manifest.find('uses-sdk').get(A+'minSdkVersion') == '34'

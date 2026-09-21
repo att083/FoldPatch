@@ -28,7 +28,7 @@ for folder in folders:
             assert not re.search('[가-힣]', node.text), (folder, key, 'Korean text leaked')
 # These are the current native product surfaces. Legacy virtual-display experiments are excluded.
 for name in ('NativeActivity', 'NativeRangeActivity', 'NativeService', 'FloatingControls', 'PointerPractice', 'TouchSide', 'ReachUi', 'ReachTile'):
-    source = (ROOT/'src/dev/reachpad'/f'{name}.java').read_text()
+    source = (ROOT/'src/dev/foldpatch'/f'{name}.java').read_text()
     assert not re.search(r'"[^"\n]*[가-힣][^"\n]*"', source), (name, 'hard-coded UI text')
     for key in re.findall(r'R\.string\.(\w+)', source):
         assert key in base, (name, key, 'missing resource')

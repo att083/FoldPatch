@@ -1,4 +1,4 @@
-package dev.reachpad;
+package dev.foldpatch;
 
 import android.content.Context;
 import android.os.Bundle;

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Arrange Chrome and YouTube on an existing ReachPad virtual display."""
+"""Arrange Chrome and YouTube on an existing FoldPatch virtual display."""
 import argparse
 import os
 from pathlib import Path
@@ -28,9 +28,9 @@ def main():
 
     # Refuse to modify arbitrary displays supplied by mistake.
     display_info = shell("dumpsys", "display")
-    if not any('"ReachPad"' in line and re.search(rf"displayId[= ]+{args.display}\b", line)
+    if not any('"FoldPatch"' in line and re.search(rf"displayId[= ]+{args.display}\b", line)
                for line in display_info.splitlines()):
-        raise RuntimeError("The requested display is not an active ReachPad display")
+        raise RuntimeError("The requested display is not an active FoldPatch display")
 
     for package, left, right in [("com.android.chrome", 0, args.left_width),
                                  ("com.google.android.youtube", args.left_width, args.width)]:

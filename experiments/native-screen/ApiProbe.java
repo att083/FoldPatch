@@ -1,4 +1,4 @@
-package dev.reachpad.experiment;
+package dev.foldpatch.experiment;
 public final class ApiProbe {
  public static void main(String[] args)throws Exception {
   for(String name:args){System.out.println("CLASS "+name);for(java.lang.reflect.Method m:Class.forName(name).getDeclaredMethods()){

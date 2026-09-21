@@ -1,4 +1,4 @@
-package dev.reachpad.experiment;
+package dev.foldpatch.experiment;
 
 import android.graphics.Rect;
 import android.os.IBinder;
@@ -74,11 +74,11 @@ public final class GestureLayerProbe {
             IBinder binder = (IBinder) Class.forName("android.os.ServiceManager").getMethod("getService", String.class).invoke(null, "window");
             Object wm = Class.forName("android.view.IWindowManager$Stub").getMethod("asInterface", IBinder.class).invoke(null, binder);
             Object im=Class.forName("android.hardware.input.InputManagerGlobal").getMethod("getInstance").invoke(null);
-            monitor=call(im,"monitorGestureInput",new Class<?>[]{String.class,int.class},"ReachPad presentation host",0);
+            monitor=call(im,"monitorGestureInput",new Class<?>[]{String.class,int.class},"FoldPatch presentation host",0);
             anchor=(SurfaceControl)call(monitor,"getSurface",new Class<?>[0]);
             Class<?> hc=Class.forName("android.view.InputWindowHandle"),ic=Class.forName("android.os.InputConfig");
             Object handle=hc.getConstructor(Class.forName("android.view.InputApplicationHandle"),int.class).newInstance(null,0);
-            hc.getField("name").set(handle,"ReachPad non-interactive host");
+            hc.getField("name").set(handle,"FoldPatch non-interactive host");
             hc.getField("ownerPid").setInt(handle,android.os.Process.myPid());hc.getField("ownerUid").setInt(handle,2000);
             hc.getField("inputConfig").setInt(handle,ic.getField("NOT_TOUCHABLE").getInt(null)|ic.getField("NOT_FOCUSABLE").getInt(null)|ic.getField("NO_INPUT_CHANNEL").getInt(null));
             try(SurfaceControl.Transaction t=new SurfaceControl.Transaction()) {
@@ -86,8 +86,8 @@ public final class GestureLayerProbe {
                 call(t,"setTrustedOverlay",new Class<?>[]{SurfaceControl.class,boolean.class},anchor,false);
                 t.setLayer(anchor,0);t.apply();
             }
-            root = layer("ReachPad Native Test (auto restore)", "setContainerLayer", anchor);
-            SurfaceControl black = layer("ReachPad Native Gap", "setColorLayer", root);
+            root = layer("FoldPatch Native Test (auto restore)", "setContainerLayer", anchor);
+            SurfaceControl black = layer("FoldPatch Native Gap", "setColorLayer", root);
             SurfaceControl left = mirror(wm), right = mirror(wm);
             int cut = w / 2, leftEdge = Math.round(w * .45f), rightEdge = Math.round(w * .55f);
             float leftScale = (float) leftEdge / cut;

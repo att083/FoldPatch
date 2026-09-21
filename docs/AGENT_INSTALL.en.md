@@ -62,14 +62,14 @@ After selecting the device, examples below use Bash variables. An empty/missing 
 FP_DEVICE='SELECTED_DEVICE_SERIAL'
 adb -s "$FP_DEVICE" shell getprop ro.product.model
 adb -s "$FP_DEVICE" shell getprop ro.build.version.sdk
-adb -s "$FP_DEVICE" shell pm path dev.reachpad
+adb -s "$FP_DEVICE" shell pm path dev.foldpatch
 ```
 
 If the package already exists, check its installed version before proceeding. Turn off FoldPatch through its settings and allow the normal display/keyboard to return before updating an active installation. When it is safe to install the selected APK:
 
 ```bash
 adb -s "$FP_DEVICE" install --no-incremental -r "$FP_DOWNLOAD_DIR/foldpatch-release.apk"
-adb -s "$FP_DEVICE" shell am start -n dev.reachpad/.NativeActivity
+adb -s "$FP_DEVICE" shell am start -n dev.foldpatch/.NativeActivity
 ```
 
 `-r` preserves app data for a compatible update. A signature mismatch or version downgrade is a reason to find a compatible APK and explain the problem, not to uninstall, clear data, change package IDs or force a downgrade. `scripts/run-device.sh` installs the **debug** APK, so do not use it for the public release. Do not use legacy activities or debug bootstrap/probe components for ordinary setup.

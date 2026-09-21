@@ -1,4 +1,4 @@
-package dev.reachpad;
+package dev.foldpatch;
 import android.content.*;import android.os.*;import android.view.*;import java.lang.reflect.*;
 /** Debug-only, DUMP-protected driver. Exercises the actual Pad instead of bypassing its mapping. */
 public final class PointerDriverReceiver extends BroadcastReceiver {
@@ -10,6 +10,6 @@ public final class PointerDriverReceiver extends BroadcastReceiver {
   for(String key:new String[]{"cursorX","cursorY"}){Field f=NativeService.class.getDeclaredField(key);f.setAccessible(true);f.setFloat(s,i.getFloatExtra(key.equals("cursorX")?"x":"y",500));}
   long t=SystemClock.uptimeMillis();float px=c.getSharedPreferences("regions",0).getBoolean("touch_right",false)?1300:300;
   for(int action:new int[]{0,1}){MotionEvent e=MotionEvent.obtain(t,t,action,px,900,0);e.setSource(InputDevice.SOURCE_TOUCHSCREEN);s.physicalPadEvent(e);e.recycle();}
-  android.util.Log.i("ReachPadDriver","tap dispatched");
- }catch(Exception e){android.util.Log.e("ReachPadDriver","FAIL",e);}});}
+  android.util.Log.i("FoldPatchDriver","tap dispatched");
+ }catch(Exception e){android.util.Log.e("FoldPatchDriver","FAIL",e);}});}
 }

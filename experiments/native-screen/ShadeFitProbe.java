@@ -1,4 +1,4 @@
-package dev.reachpad.experiment;
+package dev.foldpatch.experiment;
 import android.graphics.Rect;
 import android.os.*;
 import android.view.SurfaceControl;
@@ -31,7 +31,7 @@ public class ShadeFitProbe {
    if(args.length>1&&args[1].equals("tall"))shadeBounds(new Rect(0,0,1768,(int)Math.ceil(2208*1768f/1574)));
    if(fits.size()!=2)throw new IllegalStateException("Unsupported shade/status grouping: "+fits.size());
    IBinder binder=(IBinder)Class.forName("android.os.ServiceManager").getMethod("getService",String.class).invoke(null,"window");wm=Class.forName("android.view.IWindowManager$Stub").getMethod("asInterface",IBinder.class).invoke(null,binder);
-   root=layer("ReachPad shade fit probe","setContainerLayer");SurfaceControl black=layer("probe background","setColorLayer");
+   root=layer("FoldPatch shade fit probe","setContainerLayer");SurfaceControl black=layer("probe background","setColorLayer");
    try(SurfaceControl.Transaction t=new SurfaceControl.Transaction()){
     call(t,"setLayerStack",new Class<?>[]{SurfaceControl.class,int.class},root,0);t.setLayer(root,2000000000);call(t,"show",new Class<?>[]{SurfaceControl.class},root);
     t.reparent(black,root).setLayer(black,0).setCrop(black,new Rect(0,0,1768,2208));call(t,"setColor",new Class<?>[]{SurfaceControl.class,float[].class},black,new float[]{0,0,0});call(t,"show",new Class<?>[]{SurfaceControl.class},black);

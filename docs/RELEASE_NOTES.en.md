@@ -16,6 +16,8 @@ FoldPatch keeps existing apps usable around an unreadable center strip, with a t
 
 ## Before installing
 
+The application ID is `dev.foldpatch`, finalized before the first public release. Earlier development builds under the former ID are separate apps; they do not transfer settings or permissions automatically.
+
 **Shizuku must be installed, running and authorized.** A non-root Shizuku service stops at reboot and may need manual startup. No root or permanently connected computer is needed. Read the [setup guide](INSTALL.en.md).
 
 Physical-device checks cover **Samsung Galaxy Z Fold3 / Android 15 / One UI 7**. **Android 16 and 17 have emulator results only.** Android 14 is the installation minimum; other models are unverified. See [compatibility and known limits](COMPATIBILITY.en.md).

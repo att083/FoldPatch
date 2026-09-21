@@ -1,4 +1,4 @@
-package dev.reachpad.experiment;
+package dev.foldpatch.experiment;
 import android.os.*;
 import android.view.*;
 /** Diagnostic only: Android rewrites injected device IDs to -1. Simultaneous helper injection
@@ -9,8 +9,8 @@ public final class TouchpadProbe {
   Object wm=Class.forName("android.view.IWindowManager$Stub").getMethod("asInterface",IBinder.class).invoke(null,wb);
   boolean own=false;
   for(Object info:(java.util.List<?>)wm.getClass().getMethod("getVisibleWindowInfoList").invoke(wm))
-   if(info.getClass().getField("focused").getBoolean(info)&&String.valueOf(info.getClass().getField("name").get(info)).equals("dev.reachpad/dev.reachpad.ProbeActivity"))own=true;
-  if(!own)throw new IllegalStateException("Requires focused ReachPad ProbeActivity");
+   if(info.getClass().getField("focused").getBoolean(info)&&String.valueOf(info.getClass().getField("name").get(info)).equals("dev.foldpatch/dev.foldpatch.ProbeActivity"))own=true;
+  if(!own)throw new IllegalStateException("Requires focused FoldPatch ProbeActivity");
   Class<?> c=Class.forName("android.hardware.input.InputManagerGlobal");Object im=c.getMethod("getInstance").invoke(null);
   java.lang.reflect.Method inject=c.getMethod("injectInputEvent",InputEvent.class,int.class);
   MotionEvent.PointerProperties[] p=new MotionEvent.PointerProperties[2];MotionEvent.PointerCoords[] xy=new MotionEvent.PointerCoords[2];

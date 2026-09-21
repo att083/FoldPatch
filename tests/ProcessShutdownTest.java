@@ -1,4 +1,4 @@
-package dev.reachpad;
+package dev.foldpatch;
 import java.io.*;
 import java.util.concurrent.TimeUnit;
 public final class ProcessShutdownTest {

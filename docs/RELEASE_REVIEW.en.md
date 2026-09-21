@@ -2,7 +2,9 @@
 
 [한국어](RELEASE_REVIEW.md) · [Compatibility](COMPATIBILITY.en.md) · [Historical development log (Korean)](research/2026-09-20-development-history.md)
 
-Scope: **v0.1.0-alpha.4**, updated 2026-09-20. This is an early alpha being prepared for its first GitHub release. **Physical-device testing covers Samsung Galaxy Z Fold3 / Android 15 / One UI 7. Android 16 and 17 have emulator results only.**
+Scope: **v0.1.0-alpha.4**, updated 2026-09-21. This is an early alpha being prepared for its first GitHub release. **Physical-device testing covers Samsung Galaxy Z Fold3 / Android 15 / One UI 7. Android 16 and 17 have emulator results only.**
+
+The application ID was finalized as `dev.foldpatch` before publication on 2026-09-21. The renamed development APK was installed on the Fold3 with the maintainer’s screen/control settings transferred and new permissions approved in the setup flow. The maintainer confirmed touchpad click/scroll, keyboard input, cover-screen recovery and automatic return after unfolding. The old development app was then removed. This was a settings migration, not an independent novice onboarding test. Earlier emulator/browser-installation evidence below predates the ID change.
 
 ## Observed results
 
@@ -13,8 +15,8 @@ Scope: **v0.1.0-alpha.4**, updated 2026-09-20. This is an early alpha being prep
 | Android 15/16/17 emulators | Integrated reflow, asymmetric widths, forced-process-exit and area-ownership recovery; input and keyboard editing on API 36/37 | Not Samsung hardware, physical folding or latest One UI validation |
 | Onboarding | Android 15/16 wireless Shizuku pairing, denied/retried authorization, range saving and progress after restart | Fresh Samsung installation and independent novice-user testing remain open |
 | Connection continuity | Fold3 clicks during about 120 seconds without Wi-Fi/wireless debugging; control returned after about one minute of screen-off | USB debugging remained enabled; no claim of all-day/outdoor continuity or reboot autostart |
-| Public APK candidate | Distribution-signature verification; fresh installation/launch and setup progress retained across an update on Android 17 emulator | The existing Samsung phone used a development-signed update to retain its data |
-| Browser installation | Android 17 emulator: Chrome download → allow installation source → Android installer → Open → first setup screen; verified download hash, version and non-debuggable flag | Served from a local HTTP test server, not the eventual GitHub HTTPS release or a Samsung device |
+| Earlier public APK candidate | Distribution-signature verification; fresh installation/launch and setup progress retained across an update on Android 17 emulator | The existing Samsung phone used a development-signed update to retain its data |
+| Earlier browser installation | Android 17 emulator: Chrome download → allow installation source → Android installer → Open → first setup screen; verified download hash, version and non-debuggable flag | Served from a local HTTP test server, not the eventual GitHub HTTPS release or a Samsung device |
 
 An early Android 17 path failed. The integrated alternative subsequently passed the tests above while preserving system ownership. Historical statements about that failed path are not the current result. Android 17 bottom gestures/taskbar behavior and manufacturer display structures still need additional device checks.
 

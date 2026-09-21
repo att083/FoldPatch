@@ -1,4 +1,4 @@
-package dev.reachpad;
+package dev.foldpatch;
 
 import android.app.Activity;
 import android.graphics.*;
@@ -44,12 +44,12 @@ public final class TouchSideProbeActivity extends Activity {
                     if(target==2){set(s,"cursorX",left/2f);single(s,0,px,py);single(s,1,px,py);}
                     single(s,0,px,py);multi(s,5|(1<<8),px,py);multi(s,2,px+70,py+100);multi(s,6|(1<<8),px+70,py+100);single(s,1,px+70,py+100);
                     handler.postDelayed(()->{
-                        if(taps<(target==2?3:2)||Math.abs(dx)<40||Math.abs(dy)<60)android.util.Log.e("ReachPadSideTest","FAIL scrolling dx="+dx+" dy="+dy);
-                        else android.util.Log.i("ReachPadSideTest","PASS side="+(right?"right":"left")+" target="+target+" taps="+taps+" dx="+dx+" dy="+dy);
+                        if(taps<(target==2?3:2)||Math.abs(dx)<40||Math.abs(dy)<60)android.util.Log.e("FoldPatchSideTest","FAIL scrolling dx="+dx+" dy="+dy);
+                        else android.util.Log.i("FoldPatchSideTest","PASS side="+(right?"right":"left")+" target="+target+" taps="+taps+" dx="+dx+" dy="+dy);
                     },350);
-                }catch(Throwable e){android.util.Log.e("ReachPadSideTest","FAIL",e);}
+                }catch(Throwable e){android.util.Log.e("FoldPatchSideTest","FAIL",e);}
             },350);
-        }catch(Throwable e){android.util.Log.e("ReachPadSideTest","FAIL",e);}
+        }catch(Throwable e){android.util.Log.e("FoldPatchSideTest","FAIL",e);}
     }
     private long down;
     private void single(NativeService s,int action,float x,float y)throws Exception{if(action==0)down=SystemClock.uptimeMillis();MotionEvent e=MotionEvent.obtain(down,SystemClock.uptimeMillis(),action,x,y,0);e.setSource(InputDevice.SOURCE_TOUCHSCREEN);dispatch(s,e);}
@@ -67,7 +67,7 @@ public final class TouchSideProbeActivity extends Activity {
     final class Board extends View {
         final Paint p=new Paint(3);
         Board(){super(TouchSideProbeActivity.this);}
-        @Override protected void onDraw(Canvas c){c.drawColor(0xff161c1e);p.setColor(0xffaed5b4);p.setTextSize(40);c.drawText("ReachPad touch-side test",40,450,p);c.drawText("taps="+taps+" dx="+dx+" dy="+dy,40,550,p);}
+        @Override protected void onDraw(Canvas c){c.drawColor(0xff161c1e);p.setColor(0xffaed5b4);p.setTextSize(40);c.drawText("FoldPatch touch-side test",40,450,p);c.drawText("taps="+taps+" dx="+dx+" dy="+dy,40,550,p);}
         @Override public boolean onTouchEvent(MotionEvent e){if(e.getActionMasked()==2){dx+=e.getX()-lastX;dy+=e.getY()-lastY;}if(e.getActionMasked()==1)taps++;lastX=e.getX();lastY=e.getY();invalidate();return true;}
     }
 }

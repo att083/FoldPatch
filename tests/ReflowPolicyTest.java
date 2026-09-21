@@ -1,4 +1,4 @@
-package dev.reachpad;
+package dev.foldpatch;
 
 public final class ReflowPolicyTest {
     private static final String LEGACY="    * WindowedMagnification:0:31\n      * OneHanded:17:17\n      * OneHanded:15:15\n";

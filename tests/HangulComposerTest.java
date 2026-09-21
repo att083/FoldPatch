@@ -1,4 +1,4 @@
-package dev.reachpad;
+package dev.foldpatch;
 public final class HangulComposerTest {
  static void equal(String expected,String actual){if(!expected.equals(actual))throw new AssertionError(expected+" != "+actual);}
  static String compose(String keys){HangulComposer c=new HangulComposer();String s="";for(char k:keys.toCharArray())s+=c.add(k);return s+c.text();}

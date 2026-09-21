@@ -1,4 +1,4 @@
-package dev.reachpad;
+package dev.foldpatch;
 import java.util.*;
 public final class TrackpadGestureTest {
  static final class Recorder implements TrackpadGesture.Sink {

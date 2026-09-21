@@ -7,8 +7,8 @@ for tool in javac jar keytool python3 sha256sum; do command -v "$tool" >/dev/nul
 [[ -f "$REACHPAD_ANDROID" && -x "$REACHPAD_TOOLS/aapt2" ]] || { echo 'Install Android SDK platform 36 and build-tools 35.0.0; set ANDROID_SDK_ROOT.' >&2; exit 1; }
 (cd "$REACHPAD_ROOT/libs" && sha256sum --check SHA256SUMS)
 REACHPAD_OUT="$REACHPAD_ROOT/build/$REACHPAD_VARIANT"
-mkdir -p "$REACHPAD_OUT/classes" "$REACHPAD_OUT/dex" "$REACHPAD_ROOT/.local"
-find "$REACHPAD_OUT/classes" "$REACHPAD_OUT/dex" -type f -delete
+mkdir -p "$REACHPAD_OUT/classes" "$REACHPAD_OUT/dex" "$REACHPAD_OUT/generated" "$REACHPAD_ROOT/.local"
+find "$REACHPAD_OUT/classes" "$REACHPAD_OUT/dex" "$REACHPAD_OUT/generated" -type f -delete
 python3 "$REACHPAD_ROOT/scripts/prepare-manifest.py" "$REACHPAD_VARIANT" "$REACHPAD_OUT/AndroidManifest.xml"
 "$REACHPAD_TOOLS/aapt2" compile --dir "$REACHPAD_ROOT/res" -o "$REACHPAD_OUT/resources.zip"
 mkdir -p "$REACHPAD_OUT/assets/licenses"

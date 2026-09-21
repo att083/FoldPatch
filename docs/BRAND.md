@@ -56,7 +56,9 @@ English: **Bridge the split. Keep using your phone.**
 
 ## 업데이트 호환성
 
-개발 당시 이름은 ReachPad였습니다. 기존 설치에 그대로 업데이트하도록 `dev.reachpad` 패키지, Android 컴포넌트 이름, 환경변수 `REACHPAD_*`, 설정 키, Binder 식별자, 복구 파일, 서명 키는 유지합니다. 기존 설치를 삭제하거나 데이터 마이그레이션을 요구하지 않습니다.
+첫 공개 전에 앱 ID와 Java 패키지를 `dev.foldpatch`로 통일했습니다. 이전 개발용 설치는 다른 앱으로 인식되므로 자동으로 덮어쓰거나 설정·권한을 가져오지 않습니다. 개발 기기를 옮길 때는 사용자의 지시에 따라 이전 앱을 정상 종료하고 설정을 보존한 뒤 새 앱의 권한과 동작을 확인합니다. 일반 설치 과정에서 기존 앱을 임의로 삭제하지 않습니다.
+
+기존 서명 키와 내부 설정 키, 빌드 환경변수 `REACHPAD_*`는 유지합니다. 화면 복구용 잠금·기록 파일의 기존 이름도 유지하여 이전·새 제어 프로세스가 동시에 화면을 변경하지 못하도록 합니다.
 
 새 배포 파일명은 `foldpatch-debug.apk`, `foldpatch-release-unsigned.apk`, 서명 후 `foldpatch-release.apk`입니다. 소스 묶음은 `foldpatch-source.zip`이며 ZIP 내부 최상위 폴더는 `FoldPatch/`입니다. 이름 변경만으로 과거 APK 파일의 내용이 갱신되지는 않습니다.
 

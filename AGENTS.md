@@ -21,7 +21,7 @@ Report separately what was downloaded, installed, configured and physically veri
 ## Editing this repository
 
 - Preserve the user's existing apps/workspace and keep controls on the working touch side. Left/Right/All refer to screen regions, not individual apps.
-- The application ID is `dev.reachpad`; normal startup is `.NativeActivity`. Do not change these identifiers as a branding cleanup.
+- The application ID is `dev.foldpatch`; normal startup is `.NativeActivity`. Do not change these identifiers as a branding cleanup.
 - The build uses Bash, JDK 17 and the Android SDK, not Gradle. Follow the build guide for versions and paths.
 - For code changes, run `bash scripts/test.sh` and the relevant build. Display/input/recovery changes need targeted device checks; state what could not be tested.
 - For documentation-only changes, check links, exported files and formatting with `python3 scripts/prepare-public.py`. Do not install an APK or repeat unrelated device tests.

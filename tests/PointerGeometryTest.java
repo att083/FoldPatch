@@ -1,4 +1,4 @@
-package dev.reachpad;
+package dev.foldpatch;
 public final class PointerGeometryTest {
     static void near(float got,float expected){if(Math.abs(got-expected)>.01f)throw new AssertionError(got+" != "+expected);}
     public static void main(String[] args){

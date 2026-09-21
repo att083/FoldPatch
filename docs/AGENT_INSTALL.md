@@ -57,14 +57,14 @@ gh release download "$FP_TAG" --repo "$FP_REPO" \
 FP_DEVICE='SELECTED_DEVICE_SERIAL'
 adb -s "$FP_DEVICE" shell getprop ro.product.model
 adb -s "$FP_DEVICE" shell getprop ro.build.version.sdk
-adb -s "$FP_DEVICE" shell pm path dev.reachpad
+adb -s "$FP_DEVICE" shell pm path dev.foldpatch
 ```
 
 이미 설치돼 있다면 먼저 설치된 버전을 확인합니다. 사용 중인 폴드패치를 업데이트할 때는 앱 설정에서 끄고 일반 화면·키보드로 복귀할 시간을 줍니다. 선택한 APK를 설치할 수 있는 상태가 되면 진행합니다.
 
 ```bash
 adb -s "$FP_DEVICE" install --no-incremental -r "$FP_DOWNLOAD_DIR/foldpatch-release.apk"
-adb -s "$FP_DEVICE" shell am start -n dev.reachpad/.NativeActivity
+adb -s "$FP_DEVICE" shell am start -n dev.foldpatch/.NativeActivity
 ```
 
 `-r`은 호환되는 업데이트에서 데이터를 유지합니다. 서명 불일치나 버전 다운그레이드 오류가 나면 맞는 APK를 찾아야 합니다. 앱 삭제·데이터 초기화·패키지 이름 변경·강제 다운그레이드로 해결하지 않습니다. `scripts/run-device.sh`는 **debug APK**를 설치하므로 공개 릴리스 설치에 사용하지 않습니다. 구형 실행 화면이나 개발용 연결·시험 진입점으로 사용 준비를 대신하지 않습니다.

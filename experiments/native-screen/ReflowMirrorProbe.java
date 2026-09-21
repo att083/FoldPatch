@@ -1,4 +1,4 @@
-package dev.reachpad.experiment;
+package dev.foldpatch.experiment;
 
 import android.graphics.Rect;
 import android.os.IBinder;
@@ -76,8 +76,8 @@ public final class ReflowMirrorProbe {
             resized=true;
             call(wm,"setForcedDisplaySize",new Class<?>[]{int.class,int.class,int.class},0,1592,2208);
             Thread.sleep(1200);
-            root = layer("ReachPad Reflow Test (auto restore)", "setContainerLayer", null);
-            SurfaceControl black = layer("ReachPad Native Gap", "setColorLayer", root);
+            root = layer("FoldPatch Reflow Test (auto restore)", "setContainerLayer", null);
+            SurfaceControl black = layer("FoldPatch Native Gap", "setColorLayer", root);
             SurfaceControl left = mirror(wm), right = mirror(wm);
             int cut = 796, leftEdge = 796, rightEdge = 972;
             w=1592;

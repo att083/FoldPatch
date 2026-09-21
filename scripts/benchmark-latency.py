@@ -36,11 +36,11 @@ def main():
         return subprocess.run(base+['shell', *map(str, command)], capture_output=True,
                               text=True, check=True, timeout=20).stdout
 
-    shell('am', 'force-stop', 'dev.reachpad')
-    shell('am', 'start', '--display', '0', '-n', 'dev.reachpad/.MainActivity',
+    shell('am', 'force-stop', 'dev.foldpatch')
+    shell('am', 'start', '--display', '0', '-n', 'dev.foldpatch/.MainActivity',
           '--ez', 'benchmark', 'true', '--ez', 'low_latency', str(args.variant == 'fast').lower())
     with (out/'bridge.log').open('w') as bridge_log, (out/'events.log').open('w') as event_log:
-        bridge = subprocess.Popen(base+['shell', 'CLASSPATH=/data/local/tmp/reachpad-probe.apk app_process / dev.reachpad.ShellBridge'],
+        bridge = subprocess.Popen(base+['shell', 'CLASSPATH=/data/local/tmp/reachpad-probe.apk app_process / dev.foldpatch.ShellBridge'],
                                   stdout=bridge_log, stderr=subprocess.STDOUT)
         capture = None
         try:
@@ -50,9 +50,9 @@ def main():
                     raise RuntimeError((out/'bridge.log').read_text())
                 time.sleep(.1)
             time.sleep(1.2)
-            capture = subprocess.Popen(base+['logcat', '-v', 'brief', '-T', '1', 'ReachPadPerf:I', '*:S'],
+            capture = subprocess.Popen(base+['logcat', '-v', 'brief', '-T', '1', 'FoldPatchPerf:I', '*:S'],
                                        stdout=event_log, stderr=subprocess.STDOUT)
-            output=shell('CLASSPATH=/data/local/tmp/reachpad-probe.apk app_process / dev.reachpad.BenchmarkDriver 360 8')
+            output=shell('CLASSPATH=/data/local/tmp/reachpad-probe.apk app_process / dev.foldpatch.BenchmarkDriver 360 8')
             (out/'driver.txt').write_text(output)
             print(output.splitlines()[0], flush=True)
             (out/'display.txt').write_text(shell('dumpsys', 'display'))
@@ -60,7 +60,7 @@ def main():
         finally:
             if capture:
                 capture.terminate(); capture.wait(timeout=5)
-            shell('am', 'force-stop', 'dev.reachpad')
+            shell('am', 'force-stop', 'dev.foldpatch')
             try:
                 bridge.wait(timeout=5)
             except subprocess.TimeoutExpired:
@@ -77,7 +77,7 @@ def main():
         # Exclude process warm-up from both variants equally.
         metrics[phase+'_'+key]=summary(values[10:])
     display=(out/'display.txt').read_text()
-    rates=re.findall(r'mBaseDisplayInfo=DisplayInfo\{"ReachPad".*?renderFrameRate ([\d.]+)',display)
+    rates=re.findall(r'mBaseDisplayInfo=DisplayInfo\{"FoldPatch".*?renderFrameRate ([\d.]+)',display)
     metrics['virtual_display_hz']=rates
     metrics['validated_frame_markers']=len(frame_times)
     metrics['scope']='Original synthetic input timestamp to host GL readback; physical scanout excluded. Same diagnostic overhead in both variants.'

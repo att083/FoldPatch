@@ -1,4 +1,4 @@
-package dev.reachpad.experiment;
+package dev.foldpatch.experiment;
 public class WindowInfoProbe {
  public static void main(String[] args)throws Exception{
  Object b=Class.forName("android.os.ServiceManager").getMethod("getService",String.class).invoke(null,"window");

@@ -1,4 +1,4 @@
-package dev.reachpad;
+package dev.foldpatch;
 public final class TouchpadScrollTest {
     private static void near(float expected,float actual){if(Math.abs(expected-actual)>.01f)throw new AssertionError(expected+" != "+actual);}
     public static void main(String[] args){

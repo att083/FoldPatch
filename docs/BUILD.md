@@ -32,9 +32,9 @@ bash scripts/build.sh release
 | release | `build/foldpatch-release-unsigned.apk` | 디버깅 비활성, 시험 activity·ADB provider 제거, 아직 설치 불가 |
 | release 서명 후 | `build/foldpatch-release.apk` | 지정한 배포 키로 서명, 설치 가능 |
 
-사용자에게 보이는 이름은 FoldPatch(한국어: 폴드패치)입니다. 기존 설치의 권한·설정·키보드 연결을 유지하기 위해 패키지 ID는 `dev.reachpad`, 최소 Android 14/API 34, 현재 target API 34입니다. 이것은 GitHub 초기 시험 배포 설정이며 Play Store 요건을 만족한다는 뜻은 아닙니다. 다음 공개 버전마다 AndroidManifest.xml의 versionCode를 올리고 versionName을 변경합니다.
+사용자에게 보이는 이름은 FoldPatch(한국어: 폴드패치)입니다. 첫 공개 전에 패키지 ID를 `dev.foldpatch`로 정리했습니다. 이전 ID의 개발용 설치는 별도 앱으로 인식되므로 덮어쓰기 업데이트가 되지 않습니다. 최소 Android 14/API 34, 현재 target API 34입니다. 이것은 GitHub 초기 시험 배포 설정이며 Play Store 요건을 만족한다는 뜻은 아닙니다. 다음 공개 버전마다 AndroidManifest.xml의 versionCode를 올리고 versionName을 변경합니다.
 
-브랜딩 변경은 설치 식별자 변경이 아닙니다. 기존 Java 패키지·서비스 이름·환경변수 `REACHPAD_*`·서명 키 별칭·복구 파일명은 호환성을 위해 유지합니다. 과거 연구 기록의 ReachPad 표기는 당시 이름입니다. 아이콘 교체는 [브랜드 가이드](BRAND.md)를 참고하세요.
+Java 패키지도 `dev.foldpatch`를 사용합니다. 내부 클래스 이름·환경변수 `REACHPAD_*`·서명 키 별칭·복구 파일명은 유지합니다. 과거 연구 기록의 ReachPad 표기는 당시 이름입니다. 아이콘 교체는 [브랜드 가이드](BRAND.md)를 참고하세요.
 
 ## 배포 서명
 

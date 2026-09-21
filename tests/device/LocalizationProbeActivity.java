@@ -1,4 +1,4 @@
-package dev.reachpad;
+package dev.foldpatch;
 
 import android.app.Activity;
 import android.content.Context;
@@ -43,8 +43,8 @@ public final class LocalizationProbeActivity extends Activity {
                 c.deleteSharedPreferences("localization_probe");
             }
             String message="PASS: "+cases.length+" locale cases, "+strings+" strings, "+layouts+" toolbar layouts";
-            android.util.Log.i("ReachPadLocaleTest",message);result.setText(message);
-        }catch(Throwable e){android.util.Log.e("ReachPadLocaleTest","FAIL",e);result.setText("FAIL: "+e);}
+            android.util.Log.i("FoldPatchLocaleTest",message);result.setText(message);
+        }catch(Throwable e){android.util.Log.e("FoldPatchLocaleTest","FAIL",e);result.setText("FAIL: "+e);}
     }
     private int buttonCount(View view){
         if(view instanceof Button||view instanceof ImageButton)return 1;

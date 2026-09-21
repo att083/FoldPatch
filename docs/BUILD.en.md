@@ -24,7 +24,7 @@ After the SDK is installed, the build does not download application dependencies
 | `build/foldpatch-release-unsigned.apk` | Non-debuggable release build; not installable until signed |
 | `build/foldpatch-release.apk` | Installable release after signing with the distribution key |
 
-The application ID remains `dev.reachpad` to preserve existing installations. Minimum and target SDK are currently API 34; the compile SDK is API 36. This is a GitHub alpha configuration, not a statement of Play Store eligibility. Increase `versionCode` and update `versionName` for each public update.
+The application ID is `dev.foldpatch`. It was changed before the first public release; pre-publication development installs under the former ID are separate apps and cannot update in place. Minimum and target SDK are currently API 34; the compile SDK is API 36. This is a GitHub alpha configuration, not a statement of Play Store eligibility. Increase `versionCode` and update `versionName` for each public update.
 
 ## Validation
 
