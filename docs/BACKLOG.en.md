@@ -6,6 +6,7 @@ The next work is about reliability and installation. Hardware evidence currently
 
 | Priority | Work | Evidence needed to close it |
 | --- | --- | --- |
+| Before alpha.5 publication | Final change review and release preparation | Fold3 core checks completed; verify the source, signed APK and checksum selected for publication |
 | 1. OS and One UI compatibility | Investigate reported display-tree, taskbar, gesture and input differences on other devices | Record model/OS/build, reproduction steps and targeted before/after checks; update the compatibility table only with observed results |
 | 2. Connection and recovery | Longer Wi-Fi/mobile-data/idle use; repeated fold/lock transitions; Shizuku stop/restart and reboot | Confirm continued control or recovery of normal display, system gestures and keyboard; distinguish a live Shizuku reconnect from restarting a stopped Shizuku |
 | 3. First installation | A fresh Samsung installation and a person's attempt using only the guide; review translations and small/large UI settings | Record where setup blocks or confuses, improve that step, then repeat it without developer intervention |

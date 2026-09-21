@@ -79,7 +79,7 @@
     <string name="pause" formatted="false">잠시 멈추기</string>
     <string name="error_overlay" formatted="false">다른 앱 위에 표시 권한이 필요해요</string>
     <string name="error_shizuku" formatted="false">Shizuku 연결이 필요해요</string>
-    <string name="error_android" formatted="false">Android 14 이상에서 사용할 수 있어요</string>
+    <string name="error_android" formatted="false">Android 15 이상에서 사용할 수 있어요</string>
     <string name="preparing_controls" formatted="false">조작 연결을 준비하고 있어요</string>
     <string name="error_accessibility" formatted="false">설정의 접근성 연결을 확인해 주세요</string>
     <string name="error_screen" formatted="false">화면 연결을 다시 준비해 주세요</string>
@@ -94,7 +94,7 @@
     <string name="state_starting" formatted="false">시작하는 중</string>
     <string name="notification_settings" formatted="false">눌러서 설정 열기</string>
     <string name="resume" formatted="false">다시 시작</string>
-    <string name="whole_requires_android" formatted="false">전체 화면 조작은 Android 14 이상에서 사용할 수 있어요.</string>
+    <string name="whole_requires_android" formatted="false">전체 화면 조작은 Android 15 이상에서 사용할 수 있어요.</string>
     <string name="range_preview_title" formatted="false">범위 미리보기</string>
     <string name="range_preview_description" formatted="false">양쪽 경계선과 숫자를 확인해 주세요.</string>
     <string name="range_adjust_description" formatted="false">밝은 선을 화면이 보이는 끝에 맞춰 주세요.</string>

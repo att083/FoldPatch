@@ -39,6 +39,7 @@ public final class NativeActivity extends Activity {
 
     @Override public void onCreate(Bundle saved){
         super.onCreate(saved);ui=new ReachUi(this);prefs=getSharedPreferences("regions",0);Bridge.init(this);
+        ScreenUi.prepare(this,this::handleBack,false);
         if(!NativeRangeActivity.visible)RangePreview.rollback(prefs);TouchSide.rollback(prefs);
         if(NativeService.instance==null&&(prefs.getBoolean("native_enabled",false)||prefs.getBoolean("auto_open",false)))startForegroundService(new Intent(this,NativeService.class).setAction("watch"));
         // Existing installations keep their completed setup and all personal settings.
@@ -69,7 +70,7 @@ public final class NativeActivity extends Activity {
         renderedDensity=getResources().getConfiguration().densityDpi;renderedOrientation=getResources().getConfiguration().orientation;
         state=null;power=null;connection=null;sideCountdown=null;shizukuStatus=null;setupAction=null;setupLive=null;setupStep=null;
         FrameLayout root=new FrameLayout(this);root.setBackgroundColor(ReachUi.BG);
-        panel=ui.column();root.addView(panel,new FrameLayout.LayoutParams(safeWidth(),-1,TouchSide.right(prefs)?Gravity.RIGHT:Gravity.LEFT));
+        panel=ui.column();root.addView(panel,new FrameLayout.LayoutParams(safeWidth(),-1,TouchSide.right(prefs)?Gravity.RIGHT:Gravity.LEFT));ScreenUi.fitControls(panel);
         scroll=new ScrollView(this);scroll.setFillViewport(true);scroll.setClipToPadding(false);panel.addView(scroll,new LinearLayout.LayoutParams(-1,0,1));
         column=ui.column();column.setPadding(ui.dp(20),ui.dp(24),ui.dp(20),ui.dp(8));scroll.addView(column);
         footer=ui.column();footer.setPadding(ui.dp(20),ui.dp(8),ui.dp(20),ui.dp(16));panel.addView(footer,ui.fill(-2));setContentView(root);
@@ -77,10 +78,11 @@ public final class NativeActivity extends Activity {
             // Both physical edges must be reachable before a working side is known.
             panel.setVisibility(View.GONE);
             for(boolean right:new boolean[]{false,true}){
-                LinearLayout choice=ui.column();choice.setPadding(ui.dp(16),ui.dp(28),ui.dp(16),ui.dp(20));
-                choice.addView(ui.text(getString(R.string.wizard_side_title),23,ReachUi.TEXT,true));ui.gap(choice,16);
-                choice.addView(ui.text(getString(R.string.wizard_side_body),14,ReachUi.MUTED,false));ui.gap(choice,24);
-                choice.addView(ui.button(getString(right?R.string.wizard_use_right:R.string.wizard_use_left),true,()->chooseSetupSide(right)),ui.fill(56));
+                LinearLayout choice=ui.column();
+                LinearLayout safeChoice=ui.column();safeChoice.setPadding(ui.dp(16),ui.dp(28),ui.dp(16),ui.dp(20));choice.addView(safeChoice,ui.fill(-1));ScreenUi.fitControls(choice);
+                safeChoice.addView(ui.text(getString(R.string.wizard_side_title),23,ReachUi.TEXT,true));ui.gap(safeChoice,16);
+                safeChoice.addView(ui.text(getString(R.string.wizard_side_body),14,ReachUi.MUTED,false));ui.gap(safeChoice,24);
+                safeChoice.addView(ui.button(getString(right?R.string.wizard_use_right:R.string.wizard_use_left),true,()->chooseSetupSide(right)),ui.fill(56));
                 int width=Math.round(getDisplay().getMode().getPhysicalWidth()*.40f);
                 root.addView(choice,new FrameLayout.LayoutParams(Math.min(width,getResources().getDisplayMetrics().widthPixels/2),-1,right?Gravity.RIGHT:Gravity.LEFT));
             }
@@ -411,5 +413,5 @@ public final class NativeActivity extends Activity {
         ui.gap(column,28);column.addView(ui.text(getString(R.string.shizuku_connection),18,ReachUi.TEXT,true));ui.gap(column,8);addConnectionStatus();column.addView(ui.button(getString(R.string.check_shizuku),false,this::prepare),ui.fill(52));ui.gap(column,8);column.addView(ui.text(getString(R.string.shizuku_restart_help),13,ReachUi.MUTED,false));
         ui.gap(column,28);column.addView(ui.text(getString(R.string.turn_off_title),18,ReachUi.TEXT,true));ui.gap(column,8);column.addView(ui.text(getString(R.string.turn_off_body),14,ReachUi.MUTED,false));
     }
-    @Override public void onBackPressed(){if(page.equals("home"))finish();else go("home");}
+    private void handleBack(){if(page.equals("home"))finish();else go("home");}
 }

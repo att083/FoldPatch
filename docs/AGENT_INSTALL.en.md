@@ -8,7 +8,7 @@ Use this guide when someone asks an agent to “install this repository on my ph
 
 Read [compatibility](COMPATIBILITY.en.md) and [installation/recovery](INSTALL.en.md). Use available device information before asking technical questions. Establish the phone/model/OS, whether FoldPatch is already installed, and whether your environment can reach that phone. Ask which inner-screen side responds to touch if this is not already known.
 
-Android 14/API 34 is the installation minimum. Physical-device results cover Galaxy Z Fold3 / Android 15; Android 16/17 are emulator-only. Shizuku must be installed, running and authorized. The user can begin setup on the cover screen. Screen calibration later requires the unlocked, portrait inner display.
+Android 15/API 35 is required. On Android 14 or older, ask the user to update Android first; do not install an older FoldPatch release as a workaround. Physical-device results cover Galaxy Z Fold3 / Android 15; Android 16/17 are emulator-only. Shizuku must be installed, running and authorized. The user can begin setup on the cover screen. Screen calibration later requires the unlocked, portrait inner display.
 
 | Situation | Next action |
 | --- | --- |

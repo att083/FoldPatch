@@ -8,7 +8,7 @@ Linux 또는 macOS의 Bash 환경에서 다음을 준비합니다.
 
 - JDK 17 (`javac`, `java`, `jar`, `keytool`)
 - Python 3
-- Android SDK: `platforms;android-36`, `build-tools;35.0.0`, `platform-tools`
+- Android SDK: `platforms;android-37.0`, `build-tools;35.0.0`, `platform-tools`
 - SHA-256 도구 `sha256sum` (macOS는 coreutils 설치)
 
 SDK 경로는 `ANDROID_SDK_ROOT`, 이어서 `ANDROID_HOME`, 기본 `~/Android/Sdk` 순으로 찾습니다. Java는 `REACHPAD_JAVA` 또는 `JAVA_HOME`을 지정할 수 있으며, 지정하지 않으면 PATH의 Java를 사용합니다. Gradle·Android Studio는 필수가 아닙니다. 현재 프로젝트는 Android SDK 명령 도구로 빌드합니다.
@@ -16,7 +16,7 @@ SDK 경로는 `ANDROID_SDK_ROOT`, 이어서 `ANDROID_HOME`, 기본 `~/Android/Sd
 ```bash
 export ANDROID_SDK_ROOT="$HOME/Android/Sdk"
 # JAVA_HOME은 설치한 JDK 17 디렉터리를 지정하거나 Java 17을 PATH에 둡니다.
-sdkmanager 'platforms;android-36' 'build-tools;35.0.0' 'platform-tools'
+sdkmanager 'platforms;android-37.0' 'build-tools;35.0.0' 'platform-tools'
 bash scripts/test.sh
 bash scripts/build.sh debug
 bash scripts/build.sh release
@@ -32,7 +32,7 @@ bash scripts/build.sh release
 | release | `build/foldpatch-release-unsigned.apk` | 디버깅 비활성, 시험 activity·ADB provider 제거, 아직 설치 불가 |
 | release 서명 후 | `build/foldpatch-release.apk` | 지정한 배포 키로 서명, 설치 가능 |
 
-사용자에게 보이는 이름은 FoldPatch(한국어: 폴드패치)입니다. 첫 공개 전에 패키지 ID를 `dev.foldpatch`로 정리했습니다. 이전 ID의 개발용 설치는 별도 앱으로 인식되므로 덮어쓰기 업데이트가 되지 않습니다. 최소 Android 14/API 34, 현재 target API 34입니다. 이것은 GitHub 초기 시험 배포 설정이며 Play Store 요건을 만족한다는 뜻은 아닙니다. 다음 공개 버전마다 AndroidManifest.xml의 versionCode를 올리고 versionName을 변경합니다.
+사용자에게 보이는 이름은 FoldPatch(한국어: 폴드패치)입니다. 첫 공개 전에 패키지 ID를 `dev.foldpatch`로 정리했습니다. 이전 ID의 개발용 설치는 별도 앱으로 인식되므로 덮어쓰기 업데이트가 되지 않습니다. 다음 후보 버전(0.1.0-alpha.5)은 최소 Android 15/API 35로 올리고 target/compile API 37을 사용합니다. 공개된 alpha.4의 target은 여전히 34입니다. 타겟 기준 충족만으로 Play Store 심사나 실기기 호환성이 확인되는 것은 아닙니다. 다음 공개 버전마다 AndroidManifest.xml의 versionCode를 올리고 versionName을 변경합니다.
 
 Java 패키지도 `dev.foldpatch`를 사용합니다. 내부 클래스 이름·환경변수 `REACHPAD_*`·서명 키 별칭·복구 파일명은 유지합니다. 과거 연구 기록의 ReachPad 표기는 당시 이름입니다. 아이콘 교체는 [브랜드 가이드](BRAND.md)를 참고하세요.
 

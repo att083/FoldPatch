@@ -7,5 +7,5 @@ if [[ -n "${REACHPAD_JAVA:-${JAVA_HOME:-}}" ]]; then
     export PATH="$JAVA_HOME/bin:$PATH"
 fi
 REACHPAD_TOOLS="$REACHPAD_SDK/build-tools/35.0.0"
-REACHPAD_ANDROID="$REACHPAD_SDK/platforms/android-36/android.jar"
+REACHPAD_ANDROID="$REACHPAD_SDK/platforms/android-37.0/android.jar"
 REACHPAD_ADB="$REACHPAD_SDK/platform-tools/adb"

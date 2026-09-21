@@ -2,11 +2,15 @@
 
 [한국어・technical details](COMPATIBILITY.md) · [README](../README.md) · [Install and recover](INSTALL.en.md)
 
-Current release candidate: **v0.1.0-alpha.4**, checked 2026-09-20. **Physical-device testing is limited to Samsung Galaxy Z Fold3 / Android 15 / One UI 7. Android 16 and 17 have emulator results only.**
+**Unreleased alpha.5:** compile/target API 37, minimum API 35 (Android 15). Its update, input and folding/unfolding were checked on the Fold3 / Android 15; see the separate [candidate validation](RELEASE_REVIEW.en.md#unreleased-alpha5--target-api-37). The table below records alpha.4 and earlier development results.
+
+**Android 14 is not supported.** Reflow caused the OS process to terminate on the API 34 AOSP emulator. From alpha.5, the APK requires Android 15 or newer. The published alpha.4 allowed installation on Android 14, but that does not mean it is supported.
+
+Published release: **v0.1.0-alpha.4**, checked 2026-09-20. **Physical-device testing is limited to Samsung Galaxy Z Fold3 / Android 15 / One UI 7. Android 16 and 17 have emulator results only.**
 
 ## Requirements
 
-- Android 14 or newer is the installation minimum, not a guarantee of compatibility.
+- Android 15 or newer is required, not a guarantee of compatibility.
 - The portrait inner display must have visible space on both sides and at least one working touch side.
 - Each visible side can use 20–50% of the screen width. At 50% + 50%, the original screen is retained and the touchpad works without display reflow.
 - Shizuku must be installed, running and authorized. Root and a permanently connected computer are not required. A non-root Shizuku service stops at reboot and may require manual startup.
@@ -20,7 +24,7 @@ Current release candidate: **v0.1.0-alpha.4**, checked 2026-09-20. **Physical-de
 | Google Android 15 / API 35 emulator | Wireless Shizuku setup, onboarding, reflow, asymmetric widths and recovery after process/area-ownership loss | Samsung-specific menus, hardware touch and physical folding |
 | Google Android 16 / API 36 emulator | Setup and reflow, pointer/scroll/pinch/hold input, keyboard editing, reconnect and recovery | One UI 8 hardware; the later 50% + 50% change was not separately retested here |
 | Google Android 17 / API 37 emulator | Integrated alternate reflow path, input, keyboard editing, process/ownership recovery, 50% + 50% transitions and signed APK installation/update and browser-to-installer flow | One UI 9 hardware, physical folding and bottom-gesture/taskbar behavior |
-| Other foldables / Android 14 | Installation minimum only | Actual operation on those devices |
+| Other foldables / Android 15+ | Unverified devices | Actual operation on those devices |
 
 The 50% + 50% setting was checked on the Fold3 and the Android 17 emulator. The Fold3 range screen saved 50% and restored the previous range. Injected touchpad test events checked endpoint coordinates, zoom and long-press on both environments; these automated streams do not replace physical-finger testing.
 

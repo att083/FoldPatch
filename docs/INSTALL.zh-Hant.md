@@ -4,7 +4,7 @@
 
 [返回 README](../README.zh-Hant.md)
 
-FoldPatch 目前為早期 Alpha 版本。實機驗證環境為 **Galaxy Z Fold3（SM-F926N）· Android 15 / One UI 7**。Android 16/17 僅在模擬器上測試。長時間使用以及所有系統介面切換尚未驗證。Android 14 是最低安裝版本，並不代表支援所有裝置。[相容性與驗證紀錄（英文）](COMPATIBILITY.en.md)。
+FoldPatch 目前為早期 Alpha 版本。實機驗證環境為 **Galaxy Z Fold3（SM-F926N）· Android 15 / One UI 7**。Android 16/17 僅在模擬器上測試。長時間使用以及所有系統介面切換尚未驗證。Android 15 是最低安裝版本，並不代表支援所有裝置。[相容性與驗證紀錄（英文）](COMPATIBILITY.en.md)。
 
 ## 1. 取得 APK
 

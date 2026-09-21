@@ -79,7 +79,7 @@
     <string name="pause" formatted="false">Pause</string>
     <string name="error_overlay" formatted="false">Allow display over other apps</string>
     <string name="error_shizuku" formatted="false">Shizuku connection required</string>
-    <string name="error_android" formatted="false">Requires Android 14 or later</string>
+    <string name="error_android" formatted="false">Requires Android 15 or later</string>
     <string name="preparing_controls" formatted="false">Preparing touch controls</string>
     <string name="error_accessibility" formatted="false">Check the accessibility connection in settings</string>
     <string name="error_screen" formatted="false">Set up the screen connection again</string>
@@ -94,7 +94,7 @@
     <string name="state_starting" formatted="false">Starting</string>
     <string name="notification_settings" formatted="false">Tap to open settings</string>
     <string name="resume" formatted="false">Resume</string>
-    <string name="whole_requires_android" formatted="false">Whole-screen control requires Android 14 or later.</string>
+    <string name="whole_requires_android" formatted="false">Whole-screen control requires Android 15 or later.</string>
     <string name="range_preview_title" formatted="false">Preview screen areas</string>
     <string name="range_preview_description" formatted="false">Check the lines and numbers on both sides.</string>
     <string name="range_adjust_description" formatted="false">Move the bright lines to the edges of the visible areas.</string>

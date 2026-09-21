@@ -28,10 +28,10 @@ public final class PointerAccessibility extends AccessibilityService {
         finally{presentation.release();presentation=null;presentationGeneration=0;}
     }
     private final Runnable watch=new Runnable(){public void run(){sync();handler.postDelayed(this,250);}};
-    @Override protected void onServiceConnected(){if(Build.VERSION.SDK_INT<34){disableSelf();return;}instance=this;NativeService.settingsChanged();handler.post(watch);}
+    @Override protected void onServiceConnected(){if(Build.VERSION.SDK_INT<35){disableSelf();return;}instance=this;NativeService.settingsChanged();handler.post(watch);}
     static void refresh(){if(instance!=null)instance.sync();}
     private void sync(){
-        if(Build.VERSION.SDK_INT<34)return;
+        if(Build.VERSION.SDK_INT<35)return;
         boolean wanted=NativeService.captureTouch();
         if(capturing==wanted)return;
         capturing=wanted;gesture=false;

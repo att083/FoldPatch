@@ -42,9 +42,9 @@ The current scope is the **portrait inner display**. Both sides must have visibl
 | --- | --- |
 | Galaxy Z Fold3 · Android 15 / One UI 7 | Physical device |
 | Android 16/17 | Emulators only; no physical-device testing |
-| Other foldables / Android 14 | Functionality unverified |
+| Other foldables / Android 15+ | Functionality unverified |
 
-Android 14 is the installation minimum. See [compatibility details](docs/COMPATIBILITY.en.md) for device differences and unverified behavior. Concurrent screen-reader use is not supported.
+Android 15 is the installation minimum. See [compatibility details](docs/COMPATIBILITY.en.md) for device differences and unverified behavior. Concurrent screen-reader use is not supported.
 
 **[Shizuku](https://shizuku.rikka.app/download/) must be installed and running.** Initial setup uses trusted Wi-Fi and wireless debugging. No root or permanently connected computer is needed. Shizuku may need to be started again after reboot.
 

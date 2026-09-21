@@ -16,8 +16,15 @@ public final class FullWidthIntegrationProbe {
     }
     private static String ownership()throws Exception{
         StringBuilder result=new StringBuilder();
-        for(String line:AreaOrganizer.snapshot().split("\n"))
-            if(line.contains("* "))result.append(line.trim()).append('\n');
+        boolean areas=false;
+        for(String line:AreaOrganizer.snapshot().split("\n")){
+            if(line.contains("Display areas in top down Z order:")){areas=true;continue;}
+            if(areas&&line.contains("Task display areas in top down Z order:"))break;
+            // Activity/task records also use '*'. Launcher relayout can change
+            // those records without changing any display-area ownership.
+            if(areas&&line.contains("* "))result.append(line.trim()).append('\n');
+        }
+        check(result.length()>0,"display-area ownership section missing");
         return result.toString();
     }
     public static void main(String[] args)throws Exception{

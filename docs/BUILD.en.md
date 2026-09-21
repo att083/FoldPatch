@@ -4,13 +4,13 @@
 
 ## Prerequisites
 
-Use Bash on Linux or macOS with JDK 17 (`javac`, `java`, `jar`, `keytool`), Python 3, Android SDK platform 36, build-tools 35.0.0 and platform-tools. `sha256sum` is required; on macOS it is available through coreutils. Gradle and Android Studio are not required.
+Use Bash on Linux or macOS with JDK 17 (`javac`, `java`, `jar`, `keytool`), Python 3, Android SDK platform 37.0, build-tools 35.0.0 and platform-tools. `sha256sum` is required; on macOS it is available through coreutils. Gradle and Android Studio are not required.
 
 The scripts find the SDK through `ANDROID_SDK_ROOT`, then `ANDROID_HOME`, then `~/Android/Sdk`. Set `JAVA_HOME` or `REACHPAD_JAVA` to JDK 17, or put that JDK on PATH.
 
 ```bash
 export ANDROID_SDK_ROOT="$HOME/Android/Sdk"
-sdkmanager 'platforms;android-36' 'build-tools;35.0.0' 'platform-tools'
+sdkmanager 'platforms;android-37.0' 'build-tools;35.0.0' 'platform-tools'
 bash scripts/test.sh
 bash scripts/build.sh debug
 bash scripts/build.sh release
@@ -24,7 +24,7 @@ After the SDK is installed, the build does not download application dependencies
 | `build/foldpatch-release-unsigned.apk` | Non-debuggable release build; not installable until signed |
 | `build/foldpatch-release.apk` | Installable release after signing with the distribution key |
 
-The application ID is `dev.foldpatch`. It was changed before the first public release; pre-publication development installs under the former ID are separate apps and cannot update in place. Minimum and target SDK are currently API 34; the compile SDK is API 36. This is a GitHub alpha configuration, not a statement of Play Store eligibility. Increase `versionCode` and update `versionName` for each public update.
+The application ID is `dev.foldpatch`. It was changed before the first public release; pre-publication development installs under the former ID are separate apps and cannot update in place. The next candidate (0.1.0-alpha.5) requires minimum API 35 (Android 15) and uses target/compile API 37. The published alpha.4 still targets API 34. Target SDK compliance alone does not establish Play Store eligibility or device compatibility. Increase `versionCode` and update `versionName` for each public update.
 
 ## Validation
 

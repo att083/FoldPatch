@@ -1,3 +1,12 @@
+# 미배포 — v0.1.0-alpha.5
+
+- compile/target API 37로 변경. 최소 버전을 Android 15/API 35로 올립니다. Android 14는 지원하지 않습니다.
+- 최신 Android 뒤로 가기와 시스템 바 여백에 맞춰 설정·범위 조정을 처리합니다. 눈금은 실제 화면 양 끝을 기준으로 유지합니다.
+- 앱 ID·기존 설정·배포 서명 키를 유지하며 새 권한을 추가하지 않습니다.
+- **Fold3 / Android 15에서 설정 유지·입력·접기와 펼치기를 확인했습니다.** [후보 검사 결과](RELEASE_REVIEW.md#미배포-alpha5--target-api-37)를 확인하세요. 이 APK는 아직 배포하지 않았으며 아래 alpha.4 다운로드는 그대로입니다.
+
+---
+
 # v0.1.0-alpha.4 — 첫 공개 시험판
 
 [English](RELEASE_NOTES.en.md) · [설치·복구](INSTALL.md) · [검증 결과](RELEASE_REVIEW.md)
@@ -20,7 +29,7 @@
 
 **Shizuku 설치·실행·권한 허용이 필요합니다.** 비루팅 Shizuku는 재부팅하면 종료되며 다시 시작해야 할 수 있습니다. 루팅이나 상시 PC 연결은 필요하지 않습니다. [설치 안내](INSTALL.md)를 먼저 읽어 주세요.
 
-실기기 확인은 **삼성 Galaxy Z Fold3 / Android 15 / One UI 7**입니다. **Android 16·17은 가상 기기만 확인했습니다.** Android 14는 설치 최소 조건이며 다른 모델은 미검증입니다. [호환성과 제한](COMPATIBILITY.md)을 확인하세요.
+실기기 확인은 **삼성 Galaxy Z Fold3 / Android 15 / One UI 7**입니다. **Android 16·17은 가상 기기만 확인했습니다.** alpha.4 APK는 Android 14에 설치할 수 있었지만 Android 14는 지원하지 않습니다. Android 15 이상이 필요하며 다른 모델은 미검증입니다. [호환성과 제한](COMPATIBILITY.md)을 확인하세요.
 
 가로 화면과 화면 읽기 기능 동시 사용은 지원하지 않습니다. 키보드 입력은 한글·영문만 지원합니다. 보호 콘텐츠·통화·장시간 발열과 배터리·모든 시스템 전환은 검증이 더 필요합니다. 기존 삼성 화면 구조에서는 알림창이 축소 표시될 수 있습니다.
 

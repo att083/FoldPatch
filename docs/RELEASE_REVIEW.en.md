@@ -2,6 +2,25 @@
 
 [한국어](RELEASE_REVIEW.md) · [Compatibility](COMPATIBILITY.en.md) · [Historical development log (Korean)](research/2026-09-20-development-history.md)
 
+## Unreleased alpha.5 · target API 37
+
+Checked locally on 2026-09-21. The candidate uses compile/target API 37 and minimum API 35 (Android 15). **The target-37 candidate passed an update and core-operation check on the Fold3 / Android 15.** The public alpha.4 APK and its GitHub validation run are unchanged.
+
+To preserve the existing Fold3 installation, the release build was signed with its existing development key. Its app payload was checked to match the distribution-signed candidate; the distribution-signed APK itself was not installed on this phone. Left 44% / right 42.5% widths, the working touch side and automatic-start setting were retained. Reflow and calibration Back were checked; the user confirmed touchpad click/scroll, keyboard input and folding/unfolding. This was not a repeat of extended-use or every system-transition test.
+
+- Settings and calibration use the current back callback and explicit system-bar insets. Insets move the controls, not the physical calibration ruler.
+- Android 16 and 17 emulators: real Shizuku authorization and setup; reflow, asymmetric widths, 50% + 50%, process/area-ownership recovery; pointer coordinates, scrolling, pinch, hold and keyboard editing; settings back, calibration save/cancel/timeout and landscape recovery passed.
+- Android 17 additionally passed notification and Quick Settings entry, screen-off/on recovery and reconnect after restarting an already-authorized Shizuku server. This does not test wireless pairing or automatic Shizuku startup after reboot.
+- Android 15 emulator: reflow/recovery and full-width probes passed. The signed public alpha.4 was updated in place to signed alpha.5; saved 44.5%/45% widths, completed setup and Shizuku authorization were retained. Settings back and calibration cancellation passed after the update.
+- **Android 14 excluded:** before raising the minimum, the API 34 AOSP emulator installed the candidate, but a reflow probe caused `system_server` to terminate in `WindowManagerService.mirrorDisplay` / `nativeMirrorSurface`. Android 14 is now excluded from support; the new APK requires Android 15 or newer.
+- Host tests, localized resources, debug/release builds and the signing certificate passed locally. The candidate adds no permissions. It is not a Play Store approval or a new GitHub-hosted CI result.
+
+The emulator operation checks above preceded the minimum-version change; they were not repeated solely for that change. After raising the minimum, host tests, debug/release builds, APK minimum API 35 and target API 37, signing and public documentation links were checked separately.
+
+Additional comparison on 2026-09-21 (before raising the minimum): the production rendering code from the signed public alpha.4 and candidate alpha.5 APKs was run through the same external probe on the API 34 emulator. Both crashed the OS on start → stop → start. The observed rendering failure already exists in the published pipeline and was not newly introduced by the target migration. Samsung Android 14 hardware behavior remains unverified.
+
+## Published alpha.4 validation
+
 Scope: **v0.1.0-alpha.4**, updated 2026-09-21. This is the first public alpha. **Physical-device testing covers Samsung Galaxy Z Fold3 / Android 15 / One UI 7. Android 16 and 17 have emulator results only.**
 
 The application ID was finalized as `dev.foldpatch` before publication on 2026-09-21. The renamed development APK was installed on the Fold3 with the maintainer’s screen/control settings transferred and new permissions approved in the setup flow. The maintainer confirmed touchpad click/scroll, keyboard input, cover-screen recovery and automatic return after unfolding. The old development app was then removed. This was a settings migration, not an independent novice onboarding test. Earlier emulator/browser-installation evidence below predates the ID change.

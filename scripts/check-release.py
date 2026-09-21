@@ -25,7 +25,13 @@ with tempfile.TemporaryDirectory() as tmp:
             assert text.startswith('package dev.foldpatch;'), source
     assert app.get(A+'debuggable') == 'false'
     assert app.get(A+'allowBackup') == 'false'
-    assert manifest.find('uses-sdk').get(A+'minSdkVersion') == '34'
+    assert manifest.find('uses-sdk').get(A+'minSdkVersion') == '35'
+    assert manifest.find('uses-sdk').get(A+'targetSdkVersion') == '37'
+    for name in ('.NativeActivity', '.NativeRangeActivity'):
+        activity = next(e for e in app.findall('activity') if e.get(A+'name') == name)
+        # Android 15 needs explicit opt-in; Android 16's forced behavior can hide
+        # this omission and make a subpage Back unexpectedly finish the activity.
+        assert activity.get(A+'enableOnBackInvokedCallback') == 'true', name
     assert int(manifest.get(A+'versionCode')) > 0 and manifest.get(A+'versionName')
     names = {e.get(A+'name') for e in app}
     assert not names.intersection({'.ProbeActivity','.InputProbeActivity','.LatencyProbeActivity','.BridgeProvider','.TouchSideProbeActivity','.LocalizationProbeActivity','.KeyboardEditProbeActivity','.InputIntegrityProbeActivity','.PointerDriverReceiver'})

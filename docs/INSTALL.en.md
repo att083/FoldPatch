@@ -4,7 +4,7 @@
 
 [Back to README](../README.md)
 
-FoldPatch is an early alpha. Hardware testing has used a **Galaxy Z Fold3 (SM-F926N), Android 15 / One UI 7**. Android 16 and 17 have emulator tests only. Long-duration use and every system transition have not been verified. Android 14 is the minimum installation version, not a claim of support for every device. [Compatibility and evidence](COMPATIBILITY.en.md).
+FoldPatch is an early alpha. Hardware testing has used a **Galaxy Z Fold3 (SM-F926N), Android 15 / One UI 7**. Android 16 and 17 have emulator tests only. Long-duration use and every system transition have not been verified. Android 15 is the minimum installation version, not a claim of support for every device. [Compatibility and evidence](COMPATIBILITY.en.md).
 
 ## 1. Get the APK
 

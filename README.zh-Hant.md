@@ -42,9 +42,9 @@
 | --- | --- |
 | Galaxy Z Fold3 · Android 15 / One UI 7 | 已在實機上驗證 |
 | Android 16/17 | 僅在模擬器上驗證，未經實機測試 |
-| 其他摺疊手機 / Android 14 | 功能尚未驗證 |
+| 其他摺疊手機 / Android 15+ | 功能尚未驗證 |
 
-安裝最低需求為 Android 14。裝置差異和未驗證行為請參閱 [相容性說明（英文）](docs/COMPATIBILITY.en.md)。不支援與螢幕閱讀器同時使用。
+安裝最低需求為 Android 15。裝置差異和未驗證行為請參閱 [相容性說明（英文）](docs/COMPATIBILITY.en.md)。不支援與螢幕閱讀器同時使用。
 
 **必須安裝並執行 [Shizuku](https://shizuku.rikka.app/download/)。** 初次準備需要可信任的 Wi-Fi 和無線偵錯，不需要 root，也不需要一直連接電腦。手機重新啟動後，可能需要重新啟動 Shizuku。
 

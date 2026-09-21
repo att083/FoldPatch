@@ -84,7 +84,7 @@ public final class NativeService extends Service implements DisplayManager.Displ
         if(!Settings.canDrawOverlays(this)){deactivate();error=R.string.error_overlay;updateNotification();return;}
         Bridge.tryBind();
         if(BridgeProvider.helper==null){removeOverlays();if(PointerAccessibility.instance!=null)PointerAccessibility.instance.detachPresentation();active=false;imeSet=false;error=R.string.error_shizuku;updateNotification();return;}
-        if(Build.VERSION.SDK_INT<34){deactivate();error=R.string.error_android;updateNotification();return;}
+        if(Build.VERSION.SDK_INT<35){deactivate();error=R.string.error_android;updateNotification();return;}
         if(PointerAccessibility.instance==null){
             deactivate();error=R.string.preparing_controls;
             if(!accessibilityRequested){accessibilityRequested=true;Bridge.async("enable_pointer_accessibility",new Bundle(),r->{accessibilityRequested=false;},e->{accessibilityRequested=false;error=R.string.error_accessibility;updateNotification();});}
@@ -176,7 +176,7 @@ public final class NativeService extends Service implements DisplayManager.Displ
         Bundle a=new Bundle();a.putInt("key",id.equals("back")?KeyEvent.KEYCODE_BACK:id.equals("home")?KeyEvent.KEYCODE_HOME:KeyEvent.KEYCODE_APP_SWITCH);a.putBoolean("right",target==1||(target==2&&cursorX>=rightEdge));a.putBoolean("whole",target==2);a.putFloat("x",cursorX);a.putFloat("y",cursorY);a.putBoolean("ime",ReachKeyboard.shown);Bridge.async("native_key",a);
     }
     private void loadControls(){barLevel=Math.max(FloatingControls.COLLAPSED,Math.min(FloatingControls.FULL,prefs.getInt("native_bar_level",FloatingControls.PINNED)));touchRight=TouchSide.right(prefs);target=Math.max(0,Math.min(2,prefs.getInt("native_target",prefs.getBoolean("trackpad",false)?(touchRight?0:1):(touchRight?1:0))));pointerSpeed=PointerGeometry.speed(prefs.getFloat("pointer_speed",1f));}
-    private void setMode(int next){if(target==next)return;if(next==2&&Build.VERSION.SDK_INT<34){Toast.makeText(this,getString(R.string.whole_requires_android),Toast.LENGTH_LONG).show();return;}removeOverlays();target=next;if(next==2)accessibilityRequested=false;prefs.edit().putInt("native_target",next).putBoolean("trackpad",next!=(touchRight?1:0)).apply();cursorX=PointerGeometry.moveTarget(cursorX,0,leftEdge,rightEdge,width,next);ensureOverlays();rebuildBar();}
+    private void setMode(int next){if(target==next)return;if(next==2&&Build.VERSION.SDK_INT<35){Toast.makeText(this,getString(R.string.whole_requires_android),Toast.LENGTH_LONG).show();return;}removeOverlays();target=next;if(next==2)accessibilityRequested=false;prefs.edit().putInt("native_target",next).putBoolean("trackpad",next!=(touchRight?1:0)).apply();cursorX=PointerGeometry.moveTarget(cursorX,0,leftEdge,rightEdge,width,next);ensureOverlays();rebuildBar();}
     private WindowManager.LayoutParams barWindowParams(){WindowManager.LayoutParams p=new WindowManager.LayoutParams();p.copyFrom(barParams);if(touchRight)p.x-=rightEdge-leftEdge;return p;}
     private void clampBar(){if(bar==null)return;int bottom=ReachKeyboard.shown?ReachKeyboard.top:height;barParams.y=Math.max(dp(30),Math.min(Math.max(dp(30),bottom-(barWindow==null?bar.getHeight():barWindow.getHeight())-dp(12)),desiredBarY));int available=Math.max(dp(48),bottom-dp(42));barParams.height=bar.getHeight()>available?available:WindowManager.LayoutParams.WRAP_CONTENT;try{windows.updateViewLayout(barWindow,barWindowParams());}catch(Exception ignored){}}
     private Rect padArea(){

@@ -38,7 +38,7 @@ public final class NativeRangeActivity extends Activity {
         entryWidth=Math.round(physical*(TouchSide.right(prefs)?right:left));controlWidth=entryWidth;measuring=true;
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
-        getWindow().getDecorView().setSystemUiVisibility(5894);render();
+        ScreenUi.prepare(this,this::handleBack,true);render();
     }
     @Override protected void onResume(){super.onResume();visible=true;measuring=!preview;NativeService.settingsChanged();handler.post(tick);}
     @Override protected void onPause(){
@@ -49,7 +49,7 @@ public final class NativeRangeActivity extends Activity {
     @Override protected void onDestroy(){handler.removeCallbacksAndMessages(null);super.onDestroy();}
     private void render(){
         root=new FrameLayout(this);root.setBackgroundColor(ReachUi.BG);pattern=new Pattern();root.addView(pattern,new FrameLayout.LayoutParams(-1,-1));
-        panel=ui.column();root.addView(panel,new FrameLayout.LayoutParams(controlWidth,-1,TouchSide.right(prefs)?Gravity.RIGHT:Gravity.LEFT));
+        panel=ui.column();root.addView(panel,new FrameLayout.LayoutParams(controlWidth,-1,TouchSide.right(prefs)?Gravity.RIGHT:Gravity.LEFT));ScreenUi.fitControls(panel);
         scroll=new ScrollView(this);scroll.setFillViewport(true);panel.addView(scroll,new LinearLayout.LayoutParams(-1,0,1));
         body=ui.column();body.setPadding(ui.dp(14),ui.dp(22),ui.dp(14),ui.dp(8));scroll.addView(body);
         TextView title=ui.text(preview?getString(R.string.range_preview_title):getString(R.string.range_title),23,ReachUi.TEXT,true);body.addView(title);ui.gap(body,10);
@@ -130,7 +130,7 @@ public final class NativeRangeActivity extends Activity {
         else if(message.getText().length()==0||message.getText().toString().equals(getString(R.string.range_preparing)))message.setText(getString(R.string.ruler_legend));
         if(lastReady!=ready){lastReady=ready;pattern.invalidate();}
     }
-    @Override public void onBackPressed(){if(ReachKeyboard.shown)hideKeyboard();else cancel();}
+    private void handleBack(){if(ReachKeyboard.shown)hideKeyboard();else cancel();}
 
     /** Test geometry, not decorative artwork: rulers are tied to physical pixel positions. */
     final class Pattern extends View {

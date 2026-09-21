@@ -4,7 +4,7 @@
 
 [README に戻る](../README.ja.md)
 
-FoldPatch は初期アルファ版です。実機で確認した環境は **Galaxy Z Fold3（SM-F926N）・Android 15 / One UI 7** です。Android 16/17 はエミュレーターのみで確認しています。長時間の使用やすべてのシステム画面遷移は未検証です。インストールには Android 14 以上が必要ですが、すべての端末への対応を意味するものではありません。[対応状況と検証記録（英語）](COMPATIBILITY.en.md)。
+FoldPatch は初期アルファ版です。実機で確認した環境は **Galaxy Z Fold3（SM-F926N）・Android 15 / One UI 7** です。Android 16/17 はエミュレーターのみで確認しています。長時間の使用やすべてのシステム画面遷移は未検証です。インストールには Android 15 以上が必要ですが、すべての端末への対応を意味するものではありません。[対応状況と検証記録（英語）](COMPATIBILITY.en.md)。
 
 ## 1. APK を入手する
 

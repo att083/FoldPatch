@@ -79,7 +79,7 @@
     <string name="pause" formatted="false">暫停</string>
     <string name="error_overlay" formatted="false">需要允許顯示在其他應用程式上層</string>
     <string name="error_shizuku" formatted="false">需要連接 Shizuku</string>
-    <string name="error_android" formatted="false">需要 Android 14 或更新版本</string>
+    <string name="error_android" formatted="false">需要 Android 15 或更新版本</string>
     <string name="preparing_controls" formatted="false">正在準備觸控連線</string>
     <string name="error_accessibility" formatted="false">請在設定中檢查無障礙連線</string>
     <string name="error_screen" formatted="false">請重新設定螢幕連線</string>
@@ -94,7 +94,7 @@
     <string name="state_starting" formatted="false">正在啟動</string>
     <string name="notification_settings" formatted="false">點選開啟設定</string>
     <string name="resume" formatted="false">繼續</string>
-    <string name="whole_requires_android" formatted="false">控制整個螢幕需要 Android 14 或更新版本。</string>
+    <string name="whole_requires_android" formatted="false">控制整個螢幕需要 Android 15 或更新版本。</string>
     <string name="range_preview_title" formatted="false">預覽螢幕範圍</string>
     <string name="range_preview_description" formatted="false">請檢查兩側的邊界線和數字。</string>
     <string name="range_adjust_description" formatted="false">將亮線移到螢幕可見範圍的邊緣。</string>

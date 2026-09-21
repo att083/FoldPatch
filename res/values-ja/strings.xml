@@ -79,7 +79,7 @@
     <string name="pause" formatted="false">一時停止</string>
     <string name="error_overlay" formatted="false">他のアプリの上に表示する権限が必要です</string>
     <string name="error_shizuku" formatted="false">Shizukuへの接続が必要です</string>
-    <string name="error_android" formatted="false">Android 14以降が必要です</string>
+    <string name="error_android" formatted="false">Android 15以降が必要です</string>
     <string name="preparing_controls" formatted="false">操作の接続を準備中</string>
     <string name="error_accessibility" formatted="false">設定でユーザー補助の接続を確認してください</string>
     <string name="error_screen" formatted="false">画面の接続をやり直してください</string>
@@ -94,7 +94,7 @@
     <string name="state_starting" formatted="false">起動中</string>
     <string name="notification_settings" formatted="false">タップして設定を開く</string>
     <string name="resume" formatted="false">再開</string>
-    <string name="whole_requires_android" formatted="false">全体の操作にはAndroid 14以降が必要です。</string>
+    <string name="whole_requires_android" formatted="false">全体の操作にはAndroid 15以降が必要です。</string>
     <string name="range_preview_title" formatted="false">範囲のプレビュー</string>
     <string name="range_preview_description" formatted="false">左右の境界線と数字を確認してください。</string>
     <string name="range_adjust_description" formatted="false">明るい線を、画面が見える範囲の端に合わせてください。</string>

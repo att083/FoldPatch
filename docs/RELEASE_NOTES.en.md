@@ -1,3 +1,12 @@
+# Unreleased — v0.1.0-alpha.5
+
+- Compile/target API 37; minimum raised to Android 15/API 35. Android 14 is not supported.
+- Settings and calibration handle modern Android back gestures and system-bar insets, keeping the ruler tied to the physical screen edges.
+- Application ID, settings and distribution signing key are retained. No new permissions.
+- **Fold3 / Android 15 checks passed for retained settings, input and folding/unfolding.** See [candidate checks](RELEASE_REVIEW.en.md#unreleased-alpha5--target-api-37). This APK has not been published; the alpha.4 download below is unchanged.
+
+---
+
 # v0.1.0-alpha.4 — first public alpha
 
 [한국어](RELEASE_NOTES.md) · [Install and recover](INSTALL.en.md) · [Validation](RELEASE_REVIEW.en.md)
@@ -20,7 +29,7 @@ The application ID is `dev.foldpatch`, finalized before the first public release
 
 **Shizuku must be installed, running and authorized.** A non-root Shizuku service stops at reboot and may need manual startup. No root or permanently connected computer is needed. Read the [setup guide](INSTALL.en.md).
 
-Physical-device checks cover **Samsung Galaxy Z Fold3 / Android 15 / One UI 7**. **Android 16 and 17 have emulator results only.** Android 14 is the installation minimum; other models are unverified. See [compatibility and known limits](COMPATIBILITY.en.md).
+Physical-device checks cover **Samsung Galaxy Z Fold3 / Android 15 / One UI 7**. **Android 16 and 17 have emulator results only.** The alpha.4 APK allowed installation on Android 14, but Android 14 is not supported. Use Android 15 or newer; other models are unverified. See [compatibility and known limits](COMPATIBILITY.en.md).
 
 Landscape and concurrent screen-reader use are not supported. Keyboard input is Korean/English only. Protected content, calls, extended battery/thermal behavior and all system transitions have not been fully tested. Notifications can be scaled on the older Samsung display path.
 
