@@ -27,8 +27,12 @@ jobs:
         with:
           distribution: temurin
           java-version: '17'
-      - name: Install the required Android SDK packages
-        run: sdkmanager --sdk_root="$ANDROID_HOME" 'platforms;android-36' 'build-tools;35.0.0' 'platform-tools'
+      - name: Set up Android SDK and required packages
+        uses: android-actions/setup-android@be39fa834029ff78f1a44aa3bb0819b8fc2bd8fd # v4
+        with:
+          cmdline-tools-version: '12266719'
+          packages: 'platform-tools platforms;android-36 build-tools;35.0.0'
+          log-accepted-android-sdk-licenses: false
       - name: Run host, release and localization checks
         run: bash scripts/test.sh
       - name: Build the unsigned release APK
