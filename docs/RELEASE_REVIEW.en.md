@@ -25,7 +25,7 @@ An early Android 17 path failed. The integrated alternative subsequently passed 
 - Extracted the public source ZIP into a separate directory and passed all nine host test groups, release checks, 221 string keys across six resource sets, and the release build.
 - Rebuilt manifest, DEX, resources and license-file contents match the signed candidate. This excludes signature and ZIP metadata; it is not a claim of byte-identical APK files.
 - The release is non-debuggable and excludes development test entry points. Checks cover the absence of Internet permission, fixed dependency hashes and license files.
-- GitHub Actions is configured for the same host checks, unsigned build and public-export/document-link validation. Workflow lint and execution of the same commands from the exported source passed locally. **No hosted GitHub run has occurred yet.**
+- GitHub Actions is configured for the same host checks, unsigned build and public-export/document-link validation. Workflow lint and execution of the same commands from the exported source passed locally. **[GitHub-hosted validation passed](https://github.com/att083/FoldPatch/actions/runs/35564666849)** on 2026-09-21. The GitHub-built unsigned APK has the same entry contents as the locally built candidate. The repository is currently private.
 - Signing-certificate SHA-256: `c069f52970619a240dab85e4e519ae59c82cd03ca1a5ccfb0ac6e3fb161c0e48`.
 
 ## Still open

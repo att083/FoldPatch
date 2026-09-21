@@ -8,7 +8,7 @@ FoldPatch は初期アルファ版です。実機で確認した環境は **Gala
 
 ## 1. APK を入手する
 
-インストール用の **`foldpatch-release.apk`** を使います。自分でビルドする必要はありません。現在は初回の GitHub リリースを準備中です。公開後、リポジトリの **Releases → Assets** から入手してください。「Source code (zip)」は Android にインストールできません。`-unsigned.apk` で終わるファイルも一般利用向けリリースではありません。
+インストール用の **`foldpatch-release.apk`** を使います。自分でビルドする必要はありません。**[APK をダウンロード](https://github.com/att083/FoldPatch/releases/download/v0.1.0-alpha.4/foldpatch-release.apk)**してください。「Source code (zip)」は Android にインストールできません。`-unsigned.apk` で終わるファイルも一般利用向けリリースではありません。
 
 APK を開くと、Android からブラウザーやファイルアプリによるインストールの許可を求められることがあります。入手元を信頼できる場合のみ許可してください。同じ署名鍵の APK なら設定を保持したまま更新できます。開発版と公開版では署名鍵が異なる場合があります。署名の不一致を回避するために、既存アプリを安易にアンインストールしないでください。
 

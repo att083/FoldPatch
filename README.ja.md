@@ -4,7 +4,7 @@
 
 [English](README.md) · [한국어](README.ko.md) · **日本語** · [简体中文](README.zh-Hans.md) · [繁體中文](README.zh-Hant.md)
 
-**[APK のダウンロード・インストール](docs/INSTALL.ja.md)** · [対応状況（英語）](docs/COMPATIBILITY.en.md)
+**[APK をダウンロード](https://github.com/att083/FoldPatch/releases/download/v0.1.0-alpha.4/foldpatch-release.apk)** · [インストール手順](docs/INSTALL.ja.md) · [対応状況（英語）](docs/COMPATIBILITY.en.md)
 
 **中央が映らなくなり、片側しかタッチできない折りたたみスマートフォンを使い続けるための Android アプリです。**
 
@@ -50,9 +50,9 @@
 
 ## 使い始める
 
-**用意された APK をインストールするだけで、ビルド環境は不要です。** 現在は初期アルファ版で、初回の GitHub リリースを準備しています。
+**用意された APK をインストールするだけで、ビルド環境は不要です。** 現在は初期アルファ版です。
 
-1. 公開後、リリースの **Assets** から **`foldpatch-release.apk`** をダウンロードしてインストールします。
+1. **[foldpatch-release.apk](https://github.com/att083/FoldPatch/releases/download/v0.1.0-alpha.4/foldpatch-release.apk)** をダウンロードしてインストールします。
 2. FoldPatch の案内に従い、タッチできる側を選び、Shizuku・権限・キーボードを準備します。
 3. 端末を開いて左右の表示幅を調整・保存し、いつものアプリに戻ります。
 

@@ -4,7 +4,7 @@
 
 [English](README.md) · [한국어](README.ko.md) · [日本語](README.ja.md) · [简体中文](README.zh-Hans.md) · [繁體中文](README.zh-Hant.md)
 
-**[APK 다운로드·설치 안내](docs/INSTALL.md)** · [호환성](docs/COMPATIBILITY.md)
+**[APK 다운로드](https://github.com/att083/FoldPatch/releases/download/v0.1.0-alpha.4/foldpatch-release.apk)** · [설치 안내](docs/INSTALL.md) · [호환성](docs/COMPATIBILITY.md)
 
 **가운데 화면이 깨지고 한쪽 터치만 남은 폴드폰을 계속 쓰도록 돕는 Android 앱입니다.**
 
@@ -50,9 +50,9 @@
 
 ## 시작하기
 
-**설치용 APK를 제공합니다. 직접 빌드할 필요가 없습니다.** 초기 시험판의 첫 GitHub 릴리스 게시를 준비 중입니다.
+**설치용 APK를 제공합니다. 직접 빌드할 필요가 없습니다.** 현재 초기 시험판입니다.
 
-1. 공개 릴리스의 **Assets**에서 **`foldpatch-release.apk`**를 받아 설치합니다.
+1. **[foldpatch-release.apk](https://github.com/att083/FoldPatch/releases/download/v0.1.0-alpha.4/foldpatch-release.apk)**를 받아 설치합니다.
 2. 앱을 열고 **사용 준비** 안내에 따라 조작할 쪽과 Shizuku·권한·키보드를 준비합니다.
 3. 폰을 펼쳐 양쪽의 보이는 폭을 맞추고 저장한 뒤, 쓰던 앱으로 돌아갑니다.
 

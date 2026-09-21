@@ -4,7 +4,7 @@
 
 [English](README.md) · [한국어](README.ko.md) · [日本語](README.ja.md) · [简体中文](README.zh-Hans.md) · [繁體中文](README.zh-Hant.md)
 
-**[Download and install the APK](docs/INSTALL.en.md)** · [Compatibility](docs/COMPATIBILITY.en.md)
+**[Download APK](https://github.com/att083/FoldPatch/releases/download/v0.1.0-alpha.4/foldpatch-release.apk)** · [Installation guide](docs/INSTALL.en.md) · [Compatibility](docs/COMPATIBILITY.en.md)
 
 **An Android app to keep a foldable phone usable with a dead center display and touch working on only one side.**
 
@@ -50,9 +50,9 @@ Android 14 is the installation minimum. See [compatibility details](docs/COMPATI
 
 ## Get started
 
-**Install the ready-made APK; no build tools are needed.** This early alpha is being prepared for its first GitHub release.
+**Install the ready-made APK; no build tools are needed.** This is an early alpha.
 
-1. Download **`foldpatch-release.apk`** from the public release’s **Assets** and install it.
+1. Download and install **[foldpatch-release.apk](https://github.com/att083/FoldPatch/releases/download/v0.1.0-alpha.4/foldpatch-release.apk)**.
 2. Open FoldPatch and follow its setup guide to choose your touch side and prepare Shizuku, permissions, and the keyboard.
 3. Unfold, adjust and save both visible widths, then return to your usual apps.
 
