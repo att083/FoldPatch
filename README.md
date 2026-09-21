@@ -58,9 +58,9 @@ Android 14 is the installation minimum. See [compatibility details](docs/COMPATI
 
 You can do the early setup on the folded phone's cover screen. **[Installation, gestures, and recovery →](docs/INSTALL.en.md)**
 
-**Using Codex, Claude Code, or another agent?** Start with the [agent installation guide](docs/AGENT_INSTALL.en.md). [AGENTS.md](AGENTS.md) is the repository entry point. You can ask:
+**Want an AI to install FoldPatch on your phone?** Ask Codex, Claude Code, or another agent to follow the [AI installation guide](docs/AGENT_INSTALL.en.md). You can copy this request:
 
-> Read this repository's AGENTS.md and agent installation guide, then help me install FoldPatch on my phone. Do the steps you can, tell me when I need to act on the phone, and preserve my existing app data and settings.
+> Read `docs/AGENT_INSTALL.en.md` in this repository, then help me install FoldPatch on my phone. Do the steps you can, tell me when I need to act on the phone, and preserve my existing app data and settings.
 
 The interface follows your OS language: Korean, English, Japanese, Simplified Chinese, or Traditional Chinese. Keyboard input supports Korean and English only. The app has no Internet permission, ads, or analytics SDK. [Privacy and permissions](PRIVACY.en.md).
 

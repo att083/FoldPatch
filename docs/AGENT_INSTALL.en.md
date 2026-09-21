@@ -1,8 +1,8 @@
-# Installing FoldPatch with an agent
+# AI installation guide: install FoldPatch on a user's phone
 
-[한국어](AGENT_INSTALL.md) · [README](../README.md) · [Agent entry point](../AGENTS.md)
+[한국어](AGENT_INSTALL.md) · [README](../README.md)
 
-Use this guide when someone asks an agent to “install this repository on my phone.” Complete the work that your tools and the user's authorization allow; hand off only actions that need the user's device access or decision. This is an Android app, not a PC application or web service.
+Use this guide when someone asks an agent to “install this repository on my phone.” Complete the work that your tools and the user's authorization allow; hand off only actions that need the user's device access or decision. This guide serves people who want to use the Android app; contributing code or setting up a development environment is not a prerequisite. An installation request does not authorize publishing the repository or contacting other people.
 
 ## 1. Establish the current situation
 

@@ -58,9 +58,9 @@
 
 前期准备可以在手机折叠时通过外屏完成。**[安装、手势与恢复指南 →](docs/INSTALL.zh-Hans.md)**
 
-**想让 Codex、Claude Code 等智能体协助安装？** 请从 [智能体安装指南（英文）](docs/AGENT_INSTALL.en.md)开始，仓库入口为 [AGENTS.md（英文）](AGENTS.md)。可以这样提出请求：
+**想让 AI 帮你在手机上安装？** 请让 Codex、Claude Code 等智能体阅读 [AI 安装指南（英文）](docs/AGENT_INSTALL.en.md)。可以复制以下请求：
 
-> 阅读此仓库的 AGENTS.md 和智能体安装指南，帮我在手机上安装 FoldPatch。请执行你能完成的步骤，需要我在手机上操作时再告诉我，并保留现有应用数据和设置。
+> 阅读此仓库的 `docs/AGENT_INSTALL.en.md`，帮我在手机上安装 FoldPatch。请执行你能完成的步骤，需要我在手机上操作时再告诉我，并保留现有应用数据和设置。
 
 界面会跟随系统语言，支持韩语、英语、日语、简体中文和繁体中文。**键盘仅支持韩语和英语输入。** 应用没有互联网权限、广告或统计分析 SDK。[隐私与权限（英文）](PRIVACY.en.md)。
 

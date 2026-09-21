@@ -58,9 +58,9 @@
 
 前期準備可以在手機摺疊時透過外側螢幕完成。**[安裝、手勢與還原指南 →](docs/INSTALL.zh-Hant.md)**
 
-**想讓 Codex、Claude Code 等 AI 代理協助安裝？** 請從 [AI 代理安裝指南（英文）](docs/AGENT_INSTALL.en.md)開始，儲存庫入口為 [AGENTS.md（英文）](AGENTS.md)。可以這樣提出請求：
+**想讓 AI 幫你在手機上安裝？** 請讓 Codex、Claude Code 等 AI 代理閱讀 [AI 安裝指南（英文）](docs/AGENT_INSTALL.en.md)。可以複製以下請求：
 
-> 閱讀此儲存庫的 AGENTS.md 和 AI 代理安裝指南，幫我在手機上安裝 FoldPatch。請執行你能完成的步驟，需要我在手機上操作時再告訴我，並保留現有應用程式資料和設定。
+> 閱讀此儲存庫的 `docs/AGENT_INSTALL.en.md`，幫我在手機上安裝 FoldPatch。請執行你能完成的步驟，需要我在手機上操作時再告訴我，並保留現有應用程式資料和設定。
 
 介面會跟隨系統語言，支援韓語、英語、日語、簡體中文和繁體中文。**鍵盤僅支援韓語和英語輸入。** 應用程式沒有網際網路權限、廣告或分析 SDK。[隱私與權限（英文）](PRIVACY.en.md)。
 

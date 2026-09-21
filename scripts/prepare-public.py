@@ -6,7 +6,7 @@ import shutil
 import zipfile
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'build/github-ready'
-FILES = ['README.md', 'README.ko.md', 'README.ja.md', 'README.zh-Hans.md', 'README.zh-Hant.md', 'AGENTS.md', 'CLAUDE.md', 'AndroidManifest.xml', '.gitignore', 'LICENSE',
+FILES = ['README.md', 'README.ko.md', 'README.ja.md', 'README.zh-Hans.md', 'README.zh-Hant.md', 'AndroidManifest.xml', '.gitignore', 'LICENSE',
          'THIRD_PARTY_NOTICES.md', 'PRIVACY.md', 'PRIVACY.en.md', 'CONTRIBUTING.md',
          'docs/INSTALL.md', 'docs/INSTALL.en.md', 'docs/INSTALL.ja.md', 'docs/INSTALL.zh-Hans.md', 'docs/INSTALL.zh-Hant.md', 'docs/AGENT_INSTALL.md', 'docs/AGENT_INSTALL.en.md', 'docs/media/foldpatch-cover.png',
          'docs/media/settings-fold3.png', 'docs/media/calibration-fold3.png', 'docs/media/keyboard-fold3.png',
